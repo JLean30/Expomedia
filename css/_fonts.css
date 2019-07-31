@@ -1,0 +1,24 @@
+@font-face {
+  font-family: "lemonmilk";
+  src: url("./fonts/lemonmilkregular.eot");
+  src: url("./fonts/lemonmilkregular.eot?#iefix") format("embedded-opentype"), url("./fonts/lemonmilkregular.woff") format("woff"); }
+
+@font-face {
+  font-family: "montserrat-semibold";
+  src: url("./fonts/montserrat-semibold.eot");
+  src: url("./fonts/montserrat-semibold.eot?#iefix") format("embedded-opentype"), url("./fonts/montserrat-semibold.woff") format("woff"); }
+
+@font-face {
+  font-family: "montserrat-medium";
+  src: url("./fonts/montserrat-medium.eot");
+  src: url("./fonts/montserrat-medium.eot?#iefix") format("embedded-opentype"), url("./fonts/montserrat-medium.woff") format("woff"); }
+
+@font-face {
+  font-family: "montserrat-regular";
+  src: url("./fonts/montserrat-regular.eot");
+  src: url("./fonts/montserrat-regular.eot?#iefix") format("embedded-opentype"), url("./fonts/montserrat-regular.woff") format("woff"); }
+
+@font-face {
+  font-family: "montserrat-light";
+  src: url("./fonts/montserrat-light.eot");
+  src: url("./fonts/montserrat-light.eot?#iefix") format("embedded-opentype"), url("./fonts/montserrat-light.woff") format("woff"); }
