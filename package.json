@@ -1,0 +1,22 @@
+{
+  "name": "frontendexpomedia",
+  "version": "1.0.0",
+  "description": "frontendexpomedia",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/style.scss css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/mrhiram/frontendexpomedia.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/mrhiram/frontendexpomedia/issues"
+  },
+  "homepage": "https://gitlab.com/mrhiram/frontendexpomedia#readme",
+  "devDependencies": {
+    "node-sass": "^4.12.0"
+  }
+}

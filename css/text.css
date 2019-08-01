@@ -67,7 +67,3 @@
   font-family: "roboto-light-italic";
   src: url("./fonts/robotolightitalic.eot");
   src: url("./fonts/robotolightitalic.eot?#iefix") format("embedded-opentype"), url("./fonts/robotolightitalic.woff") format("woff"); }
-
-h1 {
-  font-family: 'roboto-regular';
-  font-size: 75px; }
