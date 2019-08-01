@@ -1,2 +1,173 @@
-.red {
-  color: red; }
+@font-face {
+  font-family: "lemonmilk";
+  src: url("./fonts/lemonmilk-regular.eot");
+  src: url("./fonts/lemonmilk-regular.eot?#iefix") format("embedded-opentype"), url("./fonts/lemonmilk-regular.woff") format("woff"); }
+
+@font-face {
+  font-family: "lemonmilk-italic";
+  src: url("./fonts/lemonmilk-regular-italic.eot");
+  src: url("./fonts/lemonmilk-regular-italic.eot?#iefix") format("embedded-opentype"), url("./fonts/lemonmilk-regular-italic.woff") format("woff"); }
+
+@font-face {
+  font-family: "lemonmilk-bold";
+  src: url("./fonts/lemonmilk-bold.eot");
+  src: url("./fonts/lemonmilk-bold.eot?#iefix") format("embedded-opentype"), url("./fonts/lemonmilk-bold.woff") format("woff"); }
+
+@font-face {
+  font-family: "lemonmilk-bold-italic";
+  src: url("./fonts/lemonmilk-bold-italic.eot");
+  src: url("./fonts/lemonmilk-bold-italic.eot?#iefix") format("embedded-opentype"), url("./fonts/lemonmilk-bold-italic.woff") format("woff"); }
+
+@font-face {
+  font-family: "lemonmilk-light";
+  src: url("./fonts/lemonmilk-light.eot");
+  src: url("./fonts/lemonmilk-light.eot?#iefix") format("embedded-opentype"), url("./fonts/lemonmilk-light.woff") format("woff"); }
+
+@font-face {
+  font-family: "lemonmilk-light-italic";
+  src: url("./fonts/lemonmilk-light-italic.eot");
+  src: url("./fonts/lemonmilk-light-italic.eot?#iefix") format("embedded-opentype"), url("./fonts/lemonmilk-light-italic.woff") format("woff"); }
+
+@font-face {
+  font-family: "roboto";
+  src: url("./fonts/roboto-regular.eot");
+  src: url("./fonts/roboto-regular.eot?#iefix") format("embedded-opentype"), url("./fonts/roboto-regular.woff") format("woff"); }
+
+@font-face {
+  font-family: "roboto-italic";
+  src: url("./fonts/roboto-regular-italic.eot");
+  src: url("./fonts/roboto-regular-italic.eot?#iefix") format("embedded-opentype"), url("./fonts/roboto-regular-italic.woff") format("woff"); }
+
+@font-face {
+  font-family: "roboto-black";
+  src: url("./fonts/roboto-black.eot");
+  src: url("./fonts/roboto-black.eot?#iefix") format("embedded-opentype"), url("./fonts/roboto-black.woff") format("woff"); }
+
+@font-face {
+  font-family: "roboto-black-italic";
+  src: url("./fonts/roboto-black-italic.eot");
+  src: url("./fonts/roboto-black-italic.eot?#iefix") format("embedded-opentype"), url("./fonts/roboto-black-italic.woff") format("woff"); }
+
+@font-face {
+  font-family: "roboto-bold";
+  src: url("./fonts/roboto-bold.eot");
+  src: url("./fonts/roboto-bold.eot?#iefix") format("embedded-opentype"), url("./fonts/roboto-bold.woff") format("woff"); }
+
+@font-face {
+  font-family: "roboto-bold-italic";
+  src: url("./fonts/roboto-bold-italic.eot");
+  src: url("./fonts/roboto-bold-italic.eot?#iefix") format("embedded-opentype"), url("./fonts/roboto-bold-italic.woff") format("woff"); }
+
+@font-face {
+  font-family: "roboto-medium";
+  src: url("./fonts/roboto-medium.eot");
+  src: url("./fonts/roboto-medium.eot?#iefix") format("embedded-opentype"), url("./fonts/roboto-medium.woff") format("woff"); }
+
+@font-face {
+  font-family: "roboto-medium-italic";
+  src: url("./fonts/roboto-medium-italic.eot");
+  src: url("./fonts/roboto-medium-italic.eot?#iefix") format("embedded-opentype"), url("./fonts/roboto-medium-italic.woff") format("woff"); }
+
+@font-face {
+  font-family: "roboto-light";
+  src: url("./fonts/roboto-light.eot");
+  src: url("./fonts/roboto-light.eot?#iefix") format("embedded-opentype"), url("./fonts/roboto-light.woff") format("woff"); }
+
+@font-face {
+  font-family: "roboto-light-italic";
+  src: url("./fonts/roboto-light-italic.eot");
+  src: url("./fonts/roboto-light-italic.eot?#iefix") format("embedded-opentype"), url("./fonts/roboto-light-italic.woff") format("woff"); }
+
+.hero--paragraph {
+  font-size: 1.2em; }
+  .hero--paragraph span {
+    height: 200px;
+    position: absolute;
+    width: 20px;
+    left: 50%;
+    top: -2em;
+    transform-origin: bottom center; }
+
+.hero--button {
+  font-family: 'roboto-medium';
+  font-size: 2em;
+  border-radius: 2em;
+  color: #3F3F3F; }
+
+.hero--date {
+  font-family: 'lemonmilk';
+  font-size: 2em;
+  float: right; }
+
+.hero-date__lowerspace {
+  margin-bottom: 4em; }
+
+.char1 {
+  transform: rotate(-73deg); }
+
+.char2 {
+  transform: rotate(-69deg); }
+
+.char3 {
+  transform: rotate(-65deg); }
+
+.char4 {
+  transform: rotate(-57deg); }
+
+.char5 {
+  transform: rotate(-53deg); }
+
+.char6 {
+  transform: rotate(-49deg); }
+
+.char7 {
+  transform: rotate(-45deg); }
+
+.char8 {
+  transform: rotate(-39deg); }
+
+.char9 {
+  transform: rotate(-35deg); }
+
+.char10 {
+  transform: rotate(-31deg); }
+
+.char11 {
+  transform: rotate(-27deg); }
+
+.char12 {
+  transform: rotate(-23deg); }
+
+.char13 {
+  transform: rotate(-19deg); }
+
+.char14 {
+  transform: rotate(-13deg); }
+
+.char15 {
+  transform: rotate(-9deg); }
+
+.char16 {
+  transform: rotate(-5deg); }
+
+.char17 {
+  transform: rotate(-1deg); }
+
+.char18 {
+  transform: rotate(3deg); }
+
+.char19 {
+  transform: rotate(7deg); }
+
+.char20 {
+  transform: rotate(11deg); }
+
+body {
+  font-size: 15px;
+  font-family: 'roboto'; }
+
+.logo {
+  width: 5em; }
+
+.active {
+  font-family: 'roboto-bold'; }

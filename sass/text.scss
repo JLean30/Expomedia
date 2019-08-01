@@ -1,1 +1,47 @@
 @import 'fonts';
+
+.hero--paragraph{
+    font-size: 1.2em;
+    span {
+        height: 200px;
+        position: absolute;
+        width: 20px;
+        left: 50%;
+        top: -2em;
+        transform-origin: bottom center;
+      }
+}
+.hero--button{
+    font-family: 'roboto-medium';
+    font-size: 2em;
+    border-radius: 2em;
+    color: #3F3F3F;
+}
+.hero--date{
+    font-family: 'lemonmilk';
+    font-size: 2em;
+    float: right;
+}
+.hero-date__lowerspace{
+    margin-bottom: 4em;
+}
+.char1 { transform: rotate(-73deg); }
+.char2 { transform: rotate(-69deg); }
+.char3 { transform: rotate(-65deg); }
+.char4 { transform: rotate(-57deg); }
+.char5 { transform: rotate(-53deg); }
+.char6 { transform: rotate(-49deg); }
+.char7 { transform: rotate(-45deg); }
+.char8 { transform: rotate(-39deg); }
+.char9 { transform: rotate(-35deg); }
+.char10 { transform: rotate(-31deg); }
+.char11 { transform: rotate(-27deg); }
+.char12 { transform: rotate(-23deg); }
+.char13 { transform: rotate(-19deg); }
+.char14 { transform: rotate(-13deg); }
+.char15 { transform: rotate(-9deg); }
+.char16 { transform: rotate(-5deg); }
+.char17 { transform: rotate(-1deg); }
+.char18 { transform: rotate(3deg); }
+.char19 { transform: rotate(7deg); }
+.char20 { transform: rotate(11deg); }
