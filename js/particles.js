@@ -64,6 +64,7 @@ var pJS = function(tag_id, params){
           sync: false
         }
       },
+      rotationRand: 0,
       line_linked: {
         enable: true,
         distance: 100,
@@ -250,6 +251,9 @@ var pJS = function(tag_id, params){
       }
     }
 
+    /* rotation */
+    this.rotationRand =  Math.floor(Math.random() * 180);
+
     /* position */
     this.x = position ? position.x : Math.random() * pJS.canvas.w;
     this.y = position ? position.y : Math.random() * pJS.canvas.h;
@@ -433,7 +437,7 @@ var pJS = function(tag_id, params){
       break;
 
       case 'triangle':
-        pJS.fn.vendors.drawShape(pJS.canvas.ctx, p.x-radius, p.y+radius / 1.66, radius*2, 3, 2);
+        pJS.fn.vendors.drawShape(pJS.canvas.ctx, p.x-radius, p.y+radius / 1.66, radius*2, 3, 2, p.rotationRand);
       break;
 
       case 'polygon':
@@ -1240,7 +1244,7 @@ var pJS = function(tag_id, params){
   };
 
 
-  pJS.fn.vendors.drawShape = function(c, startX, startY, sideLength, sideCountNumerator, sideCountDenominator){
+  pJS.fn.vendors.drawShape = function(c, startX, startY, sideLength, sideCountNumerator, sideCountDenominator, rotationRand){
 
     // By Programming Thomas - https://programmingthomas.wordpress.com/2013/04/03/n-sided-shapes/
     var sideCount = sideCountNumerator * sideCountDenominator;
@@ -1250,7 +1254,7 @@ var pJS = function(tag_id, params){
     c.save();
     c.beginPath();
     c.translate(startX, startY);
-    c.moveTo(0,0);
+    c.moveTo(0,0);c.rotate(30*Math.PI/rotationRand);
     for (var i = 0; i < sideCount; i++) {
       c.lineTo(sideLength,0);
       c.translate(sideLength,0);
