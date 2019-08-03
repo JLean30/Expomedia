@@ -173,29 +173,45 @@ body {
 .active {
   font-family: 'roboto-bold'; }
 
-.background-particles {
+.background--particles {
   position: absolute;
   height: 100vh;
   width: 100%;
   background: #19a1db;
   background: linear-gradient(137deg, #19a1db 0%, #204898 38%, #582e8e 59%, #de4799 92%, #f37323 100%);
-  z-index: 0; }
+  z-index: -10; }
 
-.section-index__select {
-  background-color: #525659;
-  display: block;
-  height: 160px; }
-  .section-index__select::before {
-    position: absolute;
-    content: " ";
-    width: 50vh;
-    height: 50vh;
-    border-radius: 50%;
-    z-index: 2;
-    left: 40%;
-    top: -185px;
-    background: #525659; }
+.section--cutout {
+  position: relative;
+  top: -14em; }
 
+.section--cutout__img {
+  position: relative;
+  width: 102em;
+  z-index: -9; }
+
+.section--nav {
+  z-index: 1;
+  bottom: 0; }
+
+/* .section-index__select{
+        background-color: $backgroundBody;
+        display: block;
+        
+        height: 160px;
+            &::before{
+                position: absolute;
+                content: " ";
+                width: 50vh;
+                height: 50vh;
+                border-radius: 50%;
+                z-index: 2;
+                left: 40%;
+                top: -185px;
+                background: $backgroundBody;
+            
+            }
+    }*/
 html, body {
   height: 100%;
   margin: 0px;

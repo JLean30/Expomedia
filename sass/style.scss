@@ -1,26 +1,39 @@
 @import 'text';
 $backgroundBody : #525659;
+
 body{
-    font-size: 15px;
-    font-family: 'roboto';
-    background-color: white;
+  font-size: 15px;
+  font-family: 'roboto';
+  background-color: white;
 }
 .logo{
-    width: 5em;
+  width: 5em;
 }
 .active{
-    font-family: 'roboto-bold';
+  font-family: 'roboto-bold';
 }
-.background-particles {
-    position: absolute;
-    height: 100vh;
-    width: 100%;
-    background: #19a1db;
-    background: linear-gradient(137deg, #19a1db 0%, #204898 38%, #582e8e 59%, #de4799 92%, #f37323 100%);
-    z-index: 0;
-
-    }
-    .section-index__select{
+.background--particles {
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  background: #19a1db;
+  background: linear-gradient(137deg, #19a1db 0%, #204898 38%, #582e8e 59%, #de4799 92%, #f37323 100%);
+  z-index: -10;
+}
+.section--cutout{
+  position: relative;
+  top: -14em;
+}
+.section--cutout__img{
+  position: relative;
+  width: 102em;
+  z-index: -9;
+}
+.section--nav{
+  z-index: 1;
+  bottom: 0;
+}
+   /* .section-index__select{
         background-color: $backgroundBody;
         display: block;
         
@@ -37,7 +50,7 @@ body{
                 background: $backgroundBody;
             
             }
-    }
+    }*/
 
 //reset bootstrap
 html,body {
