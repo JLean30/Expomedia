@@ -29,9 +29,27 @@ body{
   width: 102em;
   z-index: -9;
 }
-.section--nav{
+.centralnav--container{
   z-index: 1;
-  bottom: 0;
+  bottom: 0em;
+  .centralnav--container__left, .centralnav--container__right{
+    width: 38%;
+    justify-content: space-around;
+  }
+  .centralnav--container__center{
+    position: relative;
+    bottom: 7em;
+  }
+  .centralnav--element{
+    text-align: center;
+    .centralnav--icon{
+      font-size: 6em;
+      color: #fff;
+      &.big{
+        font-size: 10em;
+      }
+    }    
+  }
 }
    /* .section-index__select{
         background-color: $backgroundBody;

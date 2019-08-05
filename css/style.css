@@ -81,10 +81,10 @@
 .hero--paragraph {
   font-size: 1.2em; }
   .hero--paragraph span {
-    height: 200px;
+    height: 230px;
     position: absolute;
     width: 20px;
-    left: 50%;
+    left: 59%;
     top: -2em;
     transform-origin: bottom center; }
 
@@ -190,9 +190,22 @@ body {
   width: 102em;
   z-index: -9; }
 
-.section--nav {
+.centralnav--container {
   z-index: 1;
-  bottom: 0; }
+  bottom: 0em; }
+  .centralnav--container .centralnav--container__left, .centralnav--container .centralnav--container__right {
+    width: 38%;
+    justify-content: space-around; }
+  .centralnav--container .centralnav--container__center {
+    position: relative;
+    bottom: 7em; }
+  .centralnav--container .centralnav--element {
+    text-align: center; }
+    .centralnav--container .centralnav--element .centralnav--icon {
+      font-size: 6em;
+      color: #fff; }
+      .centralnav--container .centralnav--element .centralnav--icon.big {
+        font-size: 10em; }
 
 /* .section-index__select{
         background-color: $backgroundBody;
