@@ -1,4 +1,5 @@
 @import 'text';
+@import 'media-queries';
 $backgroundBody : #525659;
 
 body{
@@ -14,39 +15,74 @@ body{
 }
 .background--particles {
   position: absolute;
-  height: 100vh;
+  height: 88vh;
   width: 100%;
   background: #19a1db;
   background: linear-gradient(137deg, #19a1db 0%, #204898 38%, #582e8e 59%, #de4799 92%, #f37323 100%);
   z-index: -10;
 }
 .section--cutout{
-  position: relative;
-  top: -14em;
+  position: absolute;
+  width: 100%;
+  height: 431px;
+  overflow: hidden;
+  top: 48vh;
+  @include respond-to(large-screens) {
+    top: 48vh;
+  }
+}
+.section--cutout__height{
+  height: 50vh;
 }
 .section--cutout__img{
-  position: relative;
-  width: 102em;
+  position: absolute;
+  width: 41em;
   z-index: -9;
+  @include respond-to(large-screens) {
+    width: 51em;
+  }
+  &.right{
+    transform: scaleX(-1);
+    margin-left: -2px;
+    left: 50%;
+  }
+  &.left{
+    right: 50%;
+  }
 }
 .centralnav--container{
   z-index: 1;
-  bottom: 0em;
+  top: 61vh;
+  @include respond-to(large-screens) {
+    top: 65vh;
+  }
+  @include respond-to(extra-large-screens) {
+    top: 78vh;
+  }
   .centralnav--container__left, .centralnav--container__right{
     width: 38%;
     justify-content: space-around;
   }
   .centralnav--container__center{
     position: relative;
-    bottom: 7em;
+    bottom: 2em;
+    @include respond-to(large-screens) {
+      bottom: 9em;
+    }
   }
   .centralnav--element{
     text-align: center;
     .centralnav--icon{
-      font-size: 6em;
+      font-size: 3em;
+      @include respond-to(large-screens) {
+        font-size: 6em;
+      }
       color: #fff;
       &.big{
-        font-size: 10em;
+        font-size: 7em;
+        @include respond-to(large-screens) {
+          font-size: 10em;
+        }
       }
     }    
   }

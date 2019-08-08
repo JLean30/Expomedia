@@ -99,9 +99,6 @@
   font-size: 2em;
   float: right; }
 
-.hero-date__lowerspace {
-  margin-bottom: 4em; }
-
 .char1 {
   transform: rotate(-73deg); }
 
@@ -175,37 +172,70 @@ body {
 
 .background--particles {
   position: absolute;
-  height: 100vh;
+  height: 88vh;
   width: 100%;
   background: #19a1db;
   background: linear-gradient(137deg, #19a1db 0%, #204898 38%, #582e8e 59%, #de4799 92%, #f37323 100%);
   z-index: -10; }
 
 .section--cutout {
-  position: relative;
-  top: -14em; }
+  position: absolute;
+  width: 100%;
+  height: 431px;
+  overflow: hidden;
+  top: 48vh; }
+  @media (min-width: 992px) {
+    .section--cutout {
+      top: 48vh; } }
+
+.section--cutout__height {
+  height: 50vh; }
 
 .section--cutout__img {
-  position: relative;
-  width: 102em;
+  position: absolute;
+  width: 41em;
   z-index: -9; }
+  @media (min-width: 992px) {
+    .section--cutout__img {
+      width: 51em; } }
+  .section--cutout__img.right {
+    transform: scaleX(-1);
+    margin-left: -2px;
+    left: 50%; }
+  .section--cutout__img.left {
+    right: 50%; }
 
 .centralnav--container {
   z-index: 1;
-  bottom: 0em; }
+  top: 61vh; }
+  @media (min-width: 992px) {
+    .centralnav--container {
+      top: 65vh; } }
+  @media (min-width: 1200px) {
+    .centralnav--container {
+      top: 78vh; } }
   .centralnav--container .centralnav--container__left, .centralnav--container .centralnav--container__right {
     width: 38%;
     justify-content: space-around; }
   .centralnav--container .centralnav--container__center {
     position: relative;
-    bottom: 7em; }
+    bottom: 2em; }
+    @media (min-width: 992px) {
+      .centralnav--container .centralnav--container__center {
+        bottom: 9em; } }
   .centralnav--container .centralnav--element {
     text-align: center; }
     .centralnav--container .centralnav--element .centralnav--icon {
-      font-size: 6em;
+      font-size: 3em;
       color: #fff; }
+      @media (min-width: 992px) {
+        .centralnav--container .centralnav--element .centralnav--icon {
+          font-size: 6em; } }
       .centralnav--container .centralnav--element .centralnav--icon.big {
-        font-size: 10em; }
+        font-size: 7em; }
+        @media (min-width: 992px) {
+          .centralnav--container .centralnav--element .centralnav--icon.big {
+            font-size: 10em; } }
 
 /* .section-index__select{
         background-color: $backgroundBody;
