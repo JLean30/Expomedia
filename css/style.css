@@ -273,3 +273,18 @@ html, body {
 
 .panel {
   border: none; }
+
+.footerColor {
+  background-color: black;
+  font-size: x-large; }
+  .footerColor p {
+    margin-bottom: 0; }
+
+.facebookColor {
+  background-color: #143468; }
+
+.instagramColor {
+  background-color: #214897; }
+
+.twitterColor {
+  background-color: #18A1DB; }
