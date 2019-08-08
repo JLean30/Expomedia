@@ -15,7 +15,10 @@ body{
 }
 .background--particles {
   position: absolute;
-  height: 75vh;
+  height: 82vh;
+  @include respond-to(small-screens) {
+    height: 75vh  ;
+  }
   @include respond-to(extra-large-screens) {
     height: 75vh;
   }
@@ -36,6 +39,9 @@ body{
 }
 .section--cutout__height{
   height: 50vh;
+  @include respond-to(small-screens) {
+    height: 47vh  ;
+  }
   @include respond-to(medium-screens) {
     height: 36vh  ;
   }
@@ -119,6 +125,7 @@ body{
     }*/
 
 //reset bootstrap
+/*
 html,body {
     height: 100%; margin: 0px; padding: 0px; }
   
@@ -166,7 +173,7 @@ html,body {
   .panel {
     border:none; }
 
-
+*/
 //FOOTER
 .footerColor{
   background-color: black;
