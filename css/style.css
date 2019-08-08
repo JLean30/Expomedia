@@ -172,32 +172,44 @@ body {
 
 .background--particles {
   position: absolute;
-  height: 88vh;
+  height: 75vh;
   width: 100%;
   background: #19a1db;
   background: linear-gradient(137deg, #19a1db 0%, #204898 38%, #582e8e 59%, #de4799 92%, #f37323 100%);
   z-index: -10; }
+  @media (min-width: 1200px) {
+    .background--particles {
+      height: 75vh; } }
 
 .section--cutout {
   position: absolute;
   width: 100%;
   height: 431px;
   overflow: hidden;
-  top: 48vh; }
-  @media (min-width: 992px) {
+  top: 22em; }
+  @media (min-width: 1200px) {
     .section--cutout {
-      top: 48vh; } }
+      top: 25em; } }
 
 .section--cutout__height {
   height: 50vh; }
+  @media (min-width: 768px) {
+    .section--cutout__height {
+      height: 36vh; } }
+  @media (min-width: 992px) {
+    .section--cutout__height {
+      height: 18vh; } }
+  @media (min-width: 1200px) {
+    .section--cutout__height {
+      height: 39vh; } }
 
 .section--cutout__img {
   position: absolute;
-  width: 41em;
+  width: 90em;
   z-index: -9; }
   @media (min-width: 992px) {
     .section--cutout__img {
-      width: 51em; } }
+      width: 112em; } }
   .section--cutout__img.right {
     transform: scaleX(-1);
     margin-left: -2px;
@@ -207,13 +219,13 @@ body {
 
 .centralnav--container {
   z-index: 1;
-  top: 61vh; }
+  top: 30em; }
   @media (min-width: 992px) {
     .centralnav--container {
-      top: 65vh; } }
+      top: 36em; } }
   @media (min-width: 1200px) {
     .centralnav--container {
-      top: 78vh; } }
+      top: 40em; } }
   .centralnav--container .centralnav--container__left, .centralnav--container .centralnav--container__right {
     width: 38%;
     justify-content: space-around; }
