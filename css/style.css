@@ -305,9 +305,8 @@ html, body {
   border: none; }
 
 .footerColor {
-  background-color: black;
-  font-size: x-large; }
-  .footerColor p {
+  background-color: black; }
+  .footerColor h4 {
     margin-bottom: 0; }
 
 .facebookColor {
