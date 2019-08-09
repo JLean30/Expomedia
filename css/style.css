@@ -299,6 +299,9 @@ body {
   .speaker--card .speaker--social.lightblue {
     background-color: #18A1DB; }
 
+.bg--grey {
+  background-color: #3f3f3f; }
+
 /* .section-index__select{
         background-color: $backgroundBody;
         display: block;
