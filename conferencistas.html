@@ -11,7 +11,7 @@
 </head>
 <body>
     <header >
-        <div class="background--particles" id="particles-js"></div>
+        <div class="background--particles secondary" id="particles-js"></div>
         <nav class="navbar navbar-expand-lg navbar-dark">
             <img src="img/expomedia-logo.png" alt="" class="navbar-brand logo pt-4 ml-3 ml-lg-5">
             <button class="navbar-toggler btn mb-5 navbar--btn__zindex" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -43,31 +43,82 @@
                 </ul>
             </div>
         </nav>
-        <div class="col-10 offset-1 d-none d-lg-block">
-            <h2 class="hero--title mt-5">conferencistas</h2>
+        <div class="row">
+            <div class="offset-1 col-4">
+                <h2 class="hero--title mt-5 ">conferencistas</h2>
+            </div>
+            <div class="offset-2 col-4">
+                <h1 class="hero--h1 mt-5 text-white text-right">Tema del taller que<br> se va a impartir</h1>
+            </div>
         </div>
     </header>
     <section>
-        <div class="d-block w-100 section--cutout__height">
-            <div class="section--cutout">
+        <div class="d-block w-100 section--cutout__height secondary">
+            <div class="section--cutout secondary">
                 <img src="img/cutout.svg" alt="" class="section--cutout__img left d-inline-block">
                 <img src="img/cutout.svg" alt="" class="section--cutout__img right d-inline-block">
             </div>
-            <div class="position-absolute d-flex justify-content-around w-100 centralnav--container flex-column flex-lg-row">
+            <div class="position-absolute d-flex justify-content-around w-100 centralnav--container secondary flex-column flex-lg-row">
                 <div class="centralnav--container__center">
-                    <div class="centralnav--element">
-                        <a href="">
-                            <i class="far fa-calendar-alt centralnav--icon big"></i>
-                            <p class="hero--paragraph text-white">Cronograma</p>
-                        </a>
+                    <div class="centralnav--element speaker overflow-hidden rounded-circle">
+                        <img src="img/_DSC0037.jpg" alt="" class="position-relative" style="right: 5em">
                     </div>
                 </div>
                 </div>
             </div>
         </div>
     </section>
-    <section>
-
+    <section style="background-color: #3f3f3f">
+        <div class="col-10 offset-1 p-3 bg-white rounded d-flex speaker--card">
+            <div class="col p-4">
+                <h3 class="speaker--name">Nombre de la persona</h3>
+                <p class="speaker--title">Titulo de la persona</p>
+                <p>Descripción de la persona Bacon ipsum dolor amet shankle buffalo
+                        pork chop meatball turkey pastrami. Shoulder chuck burgdoggen ham,
+                        beef ribs frankfurter boudin swine bresaola doner pancetta prosciutto
+                        sirloin cow picanha. Chicken alcatra cow porchetta pork fatback jowl.
+                        Ham hock rump t-bone doner pork.</p>
+            </div>
+            <div class="col p-4 pl-5 border-left border-info">
+                <div class="row">
+                    <div class="col-3">
+                        <p class="speaker--ability mb-0">Habilidad: </p> 
+                        <p class="speaker--ability mb-0">Habilidad: </p>
+                        <p class="speaker--ability">Habilidad: </p>
+                    </div>
+                    <div class="col-7">
+                        <p>
+                            <span class="dot d-inline-block rounded-circle align-text-middle ml-5"></span>
+                            <span class="dot d-inline-block rounded-circle align-text-middle ml-3"></span>
+                            <span class="dot d-inline-block rounded-circle align-text-middle ml-3"></span>
+                            <span class="dot d-inline-block rounded-circle align-text-middle ml-3"></span>
+                            <span class="dot d-inline-block rounded-circle align-text-middle ml-3"></span>
+                        </p>
+                        <p>
+                            <span class="dot d-inline-block rounded-circle align-text-middle ml-5"></span>
+                            <span class="dot d-inline-block rounded-circle align-text-middle ml-3"></span>
+                            <span class="dot d-inline-block rounded-circle align-text-middle ml-3"></span>
+                            <span class="dot d-inline-block rounded-circle align-text-middle ml-3"></span>
+                            <span class="dot d-inline-block rounded-circle align-text-middle ml-3"></span>
+                        </p>
+                        <p>
+                            <span class="dot d-inline-block rounded-circle align-text-middle ml-5"></span>
+                            <span class="dot d-inline-block rounded-circle align-text-middle ml-3"></span>
+                            <span class="dot d-inline-block rounded-circle align-text-middle ml-3"></span>
+                            <span class="dot d-inline-block rounded-circle align-text-middle ml-3"></span>
+                            <span class="dot d-inline-block rounded-circle align-text-middle ml-3"></span>
+                        </p>
+                    </div>
+                </div>
+                <p>Descripción de la persona Bacon ipsum dolor amet shankle buffalo
+                        pork chop meatball turkey pastrami. </p>
+                <div class="row p-0">
+                    <a class="speaker--social blue px-5 py-1 mr-3" href=""><i class="fab fa-facebook-f text-white"></i></a>
+                    <a class="speaker--social pink px-5 py-1 mx-3" href=""><i class="fab fa-instagram text-white"></i></a>
+                    <a class="speaker--social lightblue px-5 py-1 mx-3" href=""><i class="fab fa-twitter text-white"></i></a>
+                </div>
+            </div>
+        </div>
     </section>
     
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
