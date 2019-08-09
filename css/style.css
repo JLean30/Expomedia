@@ -110,7 +110,7 @@
 body {
   font-size: 15px;
   font-family: 'roboto';
-  background-color: white; }
+  background-color: #3f3f3f; }
 
 .logo {
   width: 5em; }
@@ -162,13 +162,13 @@ body {
       top: 25em; } }
 
 .section--cutout__height {
-  height: 50vh; }
+  height: 61vh; }
   @media (min-width: 576px) {
     .section--cutout__height {
-      height: 47vh; } }
+      height: 55vh; } }
   @media (min-width: 768px) {
     .section--cutout__height {
-      height: 36vh; } }
+      height: 54vh; } }
   @media (min-width: 992px) {
     .section--cutout__height {
       height: 18vh; } }
