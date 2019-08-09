@@ -1,20 +1,11 @@
 @import 'text';
-<<<<<<< sass/style.scss
+@import 'media-queries';
 $backgroundBody: #525659;
 $tabletext: #800080;
 body {
     font-size: 15px;
     font-family: 'roboto';
     background-color: white;
-=======
-@import 'media-queries';
-$backgroundBody : #525659;
-
-body{
-  font-size: 15px;
-  font-family: 'roboto';
-  background-color: white;
->>>>>>> sass/style.scss
 }
 
 .logo {
@@ -26,53 +17,6 @@ body{
 }
 
 .background--particles {
-<<<<<<< sass/style.scss
-    position: absolute;
-    height: 100vh;
-    width: 100%;
-    background: #19a1db;
-    background: linear-gradient(137deg, #19a1db 0%, #204898 38%, #582e8e 59%, #de4799 92%, #f37323 100%);
-    z-index: -10;
-}
-
-.section--cutout {
-    position: relative;
-    top: -14em;
-}
-
-.section--cutout__img {
-    position: relative;
-    width: 102em;
-    z-index: -9;
-}
-
-.centralnav--container {
-    z-index: 1;
-    bottom: 0em;
-    .centralnav--container__left,
-    .centralnav--container__right {
-        width: 38%;
-        justify-content: space-around;
-    }
-    .centralnav--container__center {
-        position: relative;
-        bottom: 7em;
-    }
-    .centralnav--element {
-        text-align: center;
-        .centralnav--icon {
-            font-size: 6em;
-            color: #fff;
-            &.big {
-                font-size: 10em;
-            }
-        }
-    }
-}
-
-
-/* .section-index__select{
-=======
   position: absolute;
   height: 82vh;
   @include respond-to(small-screens) {
@@ -186,8 +130,8 @@ body{
 .main--section__bg{
   background-color: #fff;
 }
+.table { .main-table_text { color: $tabletext; } .buttons-table { background-color: #f37323; color: #fff; } } .tableDisplay { display: none; }
    /* .section-index__select{
->>>>>>> sass/style.scss
         background-color: $backgroundBody;
         display: block;
         
@@ -207,25 +151,6 @@ body{
     }*/
 
 //reset bootstrap
-<<<<<<< sass/style.scss
-html,
-body {
-    height: 100%;
-    margin: 0px;
-    padding: 0px;
-}
-
-#navbar {
-    margin-bottom: 0;
-}
-
-.alert {
-    border-radius: 0;
-}
-
-.container {
-    width: 100%;
-=======
 
 html,body {
     height: 100%; margin: 0px; padding: 0px; }
@@ -238,7 +163,6 @@ html,body {
   
   .container {
     width:100%;
->>>>>>> sass/style.scss
     padding-right: 0;
     padding-left: 0;
     margin-right: auto;
@@ -309,13 +233,6 @@ html,body {
     margin-top: 0;
     padding-top: 0;
     padding-bottom: 0;
-<<<<<<< sass/style.scss
-    border-top: none;
-}
-
-.panel {
-    border: none;
-=======
     border-top: none; }
   
   .panel {
@@ -336,5 +253,4 @@ html,body {
 }
 .twitterColor{
   background-color: #18A1DB;
->>>>>>> sass/style.scss
 }
