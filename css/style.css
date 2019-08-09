@@ -99,6 +99,10 @@
   font-size: 2em;
   float: right; }
 
+.hero--title {
+  font-family: 'lemonmilk';
+  color: #fff; }
+
 .main--subtitle {
   font-family: 'lemonmilk';
   color: #3f3f3f; }
