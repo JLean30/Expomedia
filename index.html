@@ -16,10 +16,10 @@
         <div class="background--particles" id="particles-js"></div>
         <nav class="navbar navbar-expand-lg navbar-dark">
             <img src="img/expomedia-logo.png" alt="" class="navbar-brand logo pt-4 ml-3 ml-lg-5">
-            <button class="navbar-toggler btn mb-5" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler btn mb-5 navbar--btn__zindex" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse justify-content-end pb-lg-5 pr-3" id="navbarNavDropdown">
+            <div class="collapse navbar-collapse justify-content-end pb-lg-5 pr-3 navbar-overlay" id="navbarNavDropdown">
                 <ul class="navbar-nav">
                     <li class="nav-item active">
                         <a class="nav-link" href="#">Inicio</a>
@@ -53,60 +53,104 @@
             <a class="hero--button btn btn-light mt-3 px-5">Bacon ipsum</a>
             <p class="hero--date text-white d-inline-block mt-4 mb-0">Acompañanos</p>
         </div>
-        <div class="row col-10 offset-1 justify-content-between">
-            <p class="hero--paragraph text-white">
-                <span class="char1">U</span> <span class="char2">C</span> <span class="char3">R</span> <span class="char4">S</span>
-                <span class="char5">e</span> <span class="char6">d</span> <span class="char7">e</span> <span class="char8">N</span>
-                <span class="char9">a</span> <span class="char10">n</span> <span class="char11">c</span> <span class="char12">e</span>
-                <span class="char13">s</span> <span class="char14">E</span> <span class="char15">s</span> <span class="char16">p</span>
-                <span class="char17">a</span> <span class="char18">r</span> <span class="char19">z</span> <span class="char20">a</span>
-                <p class="hero--date hero-date__lowerspace text-white d-inline-block text-right">27 - 28 <br> Agosto</p>
+        <div class="d-flex col-10 offset-1 flex-column" >
+            <p class="hero--date mb-0 text-white d-inline-block text-center mt-5 mt-lg-0 text-lg-right">27 - 28<br> Agosto</p>
+            <p class="hero--paragraph text-white text-center text-lg-right">UCR, Sede Nances Esparza</p>
         </div>
     </header>
-    <div class="d-block overflow-hidden w-100 section--cutout">
-        <img src="img/cutout.png" alt="" class="section--cutout__img">
-        <div class="position-absolute d-flex justify-content-between w-100 centralnav--container">
-            <div class="d-flex centralnav--container__left">
-                <div class="centralnav--element">
-                    <i class="fas fa-film centralnav--icon"></i>
-                    <p class="hero--paragraph text-white">Galería</p>
-                </div>
-                <div class="centralnav--element">
-                    <i class="fas fa-users centralnav--icon"></i>
-                    <p class="hero--paragraph text-white">Conferencias</p>
-                </div>
+    <section>
+        <div class="d-block w-100 section--cutout__height">
+            <div class="section--cutout">
+                <img src="img/cutout.svg" alt="" class="section--cutout__img left d-inline-block">
+                <img src="img/cutout.svg" alt="" class="section--cutout__img right d-inline-block">
             </div>
-            <div class="centralnav--container__center">
-                <div class="centralnav--element">
-                    <i class="far fa-calendar-alt centralnav--icon big"></i>
-                    <p class="hero--paragraph text-white">Cronograma</p>
+            <div class="position-absolute d-flex justify-content-around w-100 centralnav--container flex-column flex-lg-row">
+                <div class="d-none d-lg-flex centralnav--container__left">
+                    <div class="centralnav--element">
+                        <a href="">
+                            <i class="fas fa-film centralnav--icon"></i>
+                            <p class="hero--paragraph text-white">Galería</p>
+                        </a>
+                    </div>
+                    <div class="centralnav--element">
+                        <a href="">
+                            <i class="fas fa-users centralnav--icon"></i>
+                            <p class="hero--paragraph text-white">Conferencias</p>
+                        </a>
+                    </div>
                 </div>
-            </div>
-            <div class="d-flex centralnav--container__right">
-                <div class="centralnav--element">
-                    <i class="far fa-list-alt centralnav--icon"></i>
-                    <p class="hero--paragraph text-white">Inscripciones</p>
+                <div class="centralnav--container__center">
+                    <div class="centralnav--element">
+                        <a href="">
+                            <i class="far fa-calendar-alt centralnav--icon big"></i>
+                            <p class="hero--paragraph text-white">Cronograma</p>
+                        </a>
+                    </div>
                 </div>
-                <div class="centralnav--element">
-                    <i class="fas fa-trophy centralnav--icon"></i>
-                    <p class="hero--paragraph text-white">Torneos</p>
+                <div class="d-none d-lg-flex centralnav--container__right">
+                    <div class="centralnav--element">
+                        <a href="">
+                            <i class="far fa-list-alt centralnav--icon"></i>
+                            <p class="hero--paragraph text-white">Inscripciones</p>
+                        </a>
+                    </div>
+                    <div class="centralnav--element">
+                        <a href="">
+                            <i class="fas fa-trophy centralnav--icon"></i>
+                            <p class="hero--paragraph text-white">Torneos</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="d-flex d-lg-none justify-content-around col-10 offset-1 p-0">
+                    <div class="centralnav--element">
+                        <a href="">
+                            <i class="fas fa-film centralnav--icon"></i>
+                        </a>
+                    </div>
+                    <div class="centralnav--element">
+                        <a href="">
+                            <i class="fas fa-users centralnav--icon"></i>
+                        </a>
+                    </div>
+                    <div class="centralnav--element">
+                        <a href="">
+                            <i class="far fa-list-alt centralnav--icon"></i>
+                        </a>
+                    </div>
+                    <div class="centralnav--element">
+                        <a href="">
+                            <i class="fas fa-trophy centralnav--icon"></i>
+                        </a>
+                    </div>                
                 </div>
             </div>
         </div>
-    </div>
-    <div class="row">
-        <div class="col-md-12 mt-4 rounded-top">
-            <h1 class="text-center">Actividades</h1>
-            <p class=" col-md-8 mx-auto mt-3">La carrera de Informática y Tecnología Multimedia les da la bienvenida a la Expomedia 2018. Te invitamos a que asistas en las charlas y talleres impartidos por expertos invitados en su área de trabajo y estudiantes de la universidad como fotografía,
-                diseño de páginas web, software libre, big data, creación de videojuegos, modelado en 3D entre otros</p>
+    </section>
+    <section  class="main--section__bg">
+        <div class="row"> 
+            <div class="col-md-12 mt-4 rounded-top">
+                <h1 class="main--subtitle text-center">Actividades</h1>
+                <p class="main--text col-md-6 text-center mx-auto mt-3">La carrera de Informática y Tecnología Multimedia les da la bienvenida a la Expomedia 2018. Te invitamos a que 
+                        asistas en las charlas y talleres impartidos por expertos invitados en su área de trabajo y estudiantes de la universidad
+                        como fotografía, diseño de páginas web, software libre, big data, creación de videojuegos, modelado en 3D entre otros</p>
+            </div>
         </div>
-    </div>
-
-    <footer class="row bg-dark">
-        <!--Imagenes para pruebas-->
-        <div class="col-md-4"><img src="https://misanimales.com/wp-content/uploads/2015/03/patos.jpg" alt="" class="img-fluid"></div>
-        <div class="col-md-4"><img src="https://misanimales.com/wp-content/uploads/2015/03/patos.jpg" alt="" class="img-fluid"></div>
-        <div class="col-md-4"><img src="https://misanimales.com/wp-content/uploads/2015/03/patos.jpg" alt="" class="img-fluid"></div>
+    </section>
+    <footer>
+        <div class="row">
+            <div class="col-lg-6 col-sm-12 footerColor text-center text-white p-4">
+                <p>© 2019 - Expomedia</p>
+            </div>
+            <div class="col facebookColor d-flex align-items-center justify-content-center">
+                <a class="text-center p-1" href=""><img class="p-2" src="img/facebook.png" alt=""></a>
+            </div>
+            <div class="col instagramColor d-flex align-items-center justify-content-center">
+                <a class="text-center p-1" href=""><img class="p-2" src="img/instagram.png" alt=""></a>
+            </div>
+            <div class="col twitterColor d-flex align-items-center justify-content-center">
+                <a class="text-center p-1" href=""><img class="p-2" src="img/twitter.png" alt=""></a>
+            </div>
+        </div>
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

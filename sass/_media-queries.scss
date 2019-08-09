@@ -1,0 +1,37 @@
+$break-extraSmall: 350px;
+$break-small: 576px;
+$break-medium: 768px;
+$break-large: 992px;
+$break-extraLarge: 1200px;
+@mixin respond-to($media) {    
+    @if $media==extra-small-screens {
+        @media (min-width: $break-extraSmall) {
+            @content;
+        }
+    }
+    @if $media==small-screens {
+        @media (min-width: $break-small) {
+            @content;
+        }
+    }
+    @else if $media==medium-screens {
+        @media (min-width: $break-medium) {
+            @content;
+        }
+    }
+    @else if $media==large-screens {
+        @media (min-width: $break-large) {
+            @content;
+        }
+    }
+    @else if $media==extra-large-screens {
+        @media (min-width: $break-extraLarge) {
+            @content;
+        }
+    }
+    @else if $media==safari-screens{
+        @media not all and (min-resolution:.001dpcm) { 
+            @content;
+        }
+    }
+}
