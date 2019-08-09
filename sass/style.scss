@@ -1,133 +1,180 @@
 @import 'text';
 @import 'media-queries';
-$backgroundBody : #525659;
+$backgroundBody: #525659;
+$tabletext: #800080;
+body {
+    font-size: 15px;
+    font-family: 'roboto';
+    background-color: white;
+}
 
-body{
-  font-size: 15px;
-  font-family: 'roboto';
-  background-color: white;
+.logo {
+    width: 5em;
 }
-.logo{
-  width: 5em;
+
+.active {
+    font-family: 'roboto-bold';
 }
-.active{
-  font-family: 'roboto-bold';
-}
+
 .background--particles {
-  position: absolute;
-  height: 82vh;
-  @include respond-to(small-screens) {
-    height: 75vh  ;
-  }
-  @include respond-to(extra-large-screens) {
-    height: 75vh;
-  }
-  width: 100%;
-  background: #19a1db;
-  background: linear-gradient(137deg, #19a1db 0%, #204898 38%, #582e8e 59%, #de4799 92%, #f37323 100%);
-  z-index: -10;
-}
-.navbar--btn__zindex{
-  z-index: 3;
-}
-.navbar-overlay{
-  background-color: rgba($color: #000000, $alpha: 0.7);
-  position: fixed;
-  top: 0em;
-  width: 100%;
-  left: 0px;
-  padding: 10em 2em 1em;
-  z-index: 2;
-  height: 100vh;
-  @include respond-to(large-screens) {
-    background-color: transparent;
-    position: unset;
-    height: unset;
-    padding: unset;
-  }
-}
-.section--cutout{
-  position: absolute;
-  width: 100%;
-  height: 431px;
-  overflow: hidden;
-  top: 22em;
-  @include respond-to(extra-large-screens) {
-    top: 25em;
-  }
-}
-.section--cutout__height{
-  height: 50vh;
-  @include respond-to(small-screens) {
-    height: 47vh  ;
-  }
-  @include respond-to(medium-screens) {
-    height: 36vh  ;
-  }
-  @include respond-to(large-screens) {
-    height: 18vh  ;
-  }
-  @include respond-to(extra-large-screens) {
-    height: 28vh  ;
-  }
-}
-.section--cutout__img{
-  position: absolute;
-  width: 90em;
-  z-index: -9;
-  @include respond-to(large-screens) {
-    width: 112em;
-  }
-  &.right{
-    transform: scaleX(-1);
-    margin-left: -2px;
-    left: 50%;
-  }
-  &.left{
-    right: 50%;
-  }
-}
-.centralnav--container{
-  z-index: 1;
-  top: 30em;
-  @include respond-to(large-screens) {
-    top: 36em;
-  }
-  @include respond-to(extra-large-screens) {
-    top: 40em;
-  }
-  .centralnav--container__left, .centralnav--container__right{
-    width: 38%;
-    justify-content: space-around;
-  }
-  .centralnav--container__center{
-    position: relative;
-    bottom: 2em;
-    @include respond-to(large-screens) {
-      bottom: 9em;
+    position: absolute;
+    height: 82vh;
+    @include respond-to(small-screens) {
+        height: 75vh;
     }
-  }
-  .centralnav--element{
-    text-align: center;
-    .centralnav--icon{
-      font-size: 3em;
-      @include respond-to(large-screens) {
-        font-size: 6em;
-      }
-      color: #fff;
-      &.big{
-        font-size: 7em;
+    @include respond-to(extra-large-screens) {
+        height: 75vh;
+    }
+    width: 100%;
+    background: #19a1db;
+    background: linear-gradient(137deg, #19a1db 0%, #204898 38%, #582e8e 59%, #de4799 92%, #f37323 100%);
+    z-index: -10;
+}
+
+.navbar--btn__zindex {
+    z-index: 3;
+}
+
+.navbar-overlay {
+    background-color: rgba($color: #000000, $alpha: 0.7);
+    position: fixed;
+    top: 0em;
+    width: 100%;
+    left: 0px;
+    padding: 10em 2em 1em;
+    z-index: 2;
+    height: 100vh;
+    @include respond-to(large-screens) {
+        background-color: transparent;
+        position: unset;
+        height: unset;
+        padding: unset;
+    }
+}
+
+.section--cutout {
+    position: absolute;
+    width: 100%;
+    height: 431px;
+    overflow: hidden;
+    top: 22em;
+    @include respond-to(extra-large-screens) {
+        top: 25em;
+    }
+}
+
+.section--cutout__height {
+    height: 50vh;
+    @include respond-to(small-screens) {
+        height: 47vh;
+    }
+    @include respond-to(medium-screens) {
+        height: 36vh;
+    }
+    @include respond-to(large-screens) {
+        height: 18vh;
+    }
+    @include respond-to(extra-large-screens) {
+        height: 28vh;
+    }
+}
+
+.section--cutout__img {
+    position: absolute;
+    width: 90em;
+    z-index: -9;
+    @include respond-to(large-screens) {
+        width: 112em;
+    }
+    &.right {
+        transform: scaleX(-1);
+        margin-left: -2px;
+        left: 50%;
+    }
+    &.left {
+        right: 50%;
+    }
+}
+
+.centralnav--container {
+    z-index: 1;
+    top: 30em;
+    @include respond-to(large-screens) {
+        top: 36em;
+    }
+    @include respond-to(extra-large-screens) {
+        top: 40em;
+    }
+    .centralnav--container__left,
+    .centralnav--container__right {
+        width: 38%;
+        justify-content: space-around;
+    }
+    .centralnav--container__center {
+        position: relative;
+        bottom: 2em;
         @include respond-to(large-screens) {
-          font-size: 10em;
+            bottom: 9em;
         }
-      }
-    }    
-  }
+    }
+    .centralnav--element {
+        text-align: center;
+        .centralnav--icon {
+            font-size: 3em;
+            @include respond-to(large-screens) {
+                font-size: 6em;
+            }
+            color: #fff;
+            &.big {
+                font-size: 7em;
+                @include respond-to(large-screens) {
+                    font-size: 10em;
+                }
+            }
+        }
+    }
 }
-.main--section__bg{
-  background-color: #fff;
+
+.main--section__bg {
+    background-color: #fff;
 }
-   /* .section-index__select{
+
+.table {
+    .main-table_text {
+        color: $tabletext;
+    }
+    .buttons-table {
+        background-color: #f37323;
+        color: #fff;
+    }
+}
+
+.tableDisplay {
+    display: none;
+}
+
+.small-table {
+    display: block;
+    @include respond-to(extra-large-screens) {
+        display: none;
+    }
+    @include respond-to(large-screens) {
+        display: none;
+    }
+}
+
+.big-table {
+    display: none;
+    @include respond-to(extra-large-screens) {
+        display: block;
+    }
+    @include respond-to(large-screens) {
+        display: block;
+    }
+}
+
+
+/* .section-index__select{
         background-color: $backgroundBody;
         display: block;
         
@@ -147,67 +194,117 @@ body{
     }*/
 
 //reset bootstrap
+html,
+body {
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+}
 
-html,body {
-    height: 100%; margin: 0px; padding: 0px; }
-  
-  #navbar {
-    margin-bottom:0; }
-  
-  .alert {
-    border-radius: 0; }
-  
-  .container {
-    width:100%;
+#navbar {
+    margin-bottom: 0;
+}
+
+.alert {
+    border-radius: 0;
+}
+
+.container {
+    width: 100%;
     padding-right: 0;
     padding-left: 0;
     margin-right: auto;
-    margin-left: auto; }
-  
-  .col-xs-1, .col-sm-1, .col-md-1, .col-sm-1, 
-  .col-xs-2, .col-sm-2, .col-md-2, .col-sm-2, 
-  .col-xs-3, .col-sm-3, .col-md-3, .col-sm-3, 
-  .col-xs-4, .col-sm-4, .col-md-4, .col-sm-4, 
-  .col-xs-5, .col-sm-5, .col-md-5, .col-sm-5, 
-  .col-xs-6, .col-sm-6, .col-md-6, .col-sm-6, 
-  .col-xs-7, .col-sm-7, .col-md-7, .col-sm-7, 
-  .col-xs-8, .col-sm-8, .col-md-8, .col-sm-8, 
-  .col-xs-9, .col-sm-9, .col-md-9, .col-sm-9, 
-  .col-xs-10, .col-sm-10, .col-md-10, .col-sm-10, 
-  .col-xs-11, .col-sm-11, .col-md-11, .col-sm-11, 
-  .col-xs-12, .col-sm-12, .col-md-12, .col-sm-12 {
+    margin-left: auto;
+}
+
+.col-xs-1,
+.col-sm-1,
+.col-md-1,
+.col-sm-1,
+.col-xs-2,
+.col-sm-2,
+.col-md-2,
+.col-sm-2,
+.col-xs-3,
+.col-sm-3,
+.col-md-3,
+.col-sm-3,
+.col-xs-4,
+.col-sm-4,
+.col-md-4,
+.col-sm-4,
+.col-xs-5,
+.col-sm-5,
+.col-md-5,
+.col-sm-5,
+.col-xs-6,
+.col-sm-6,
+.col-md-6,
+.col-sm-6,
+.col-xs-7,
+.col-sm-7,
+.col-md-7,
+.col-sm-7,
+.col-xs-8,
+.col-sm-8,
+.col-md-8,
+.col-sm-8,
+.col-xs-9,
+.col-sm-9,
+.col-md-9,
+.col-sm-9,
+.col-xs-10,
+.col-sm-10,
+.col-md-10,
+.col-sm-10,
+.col-xs-11,
+.col-sm-11,
+.col-md-11,
+.col-sm-11,
+.col-xs-12,
+.col-sm-12,
+.col-md-12,
+.col-sm-12 {
     position: relative;
-    height:100%;
+    height: 100%;
     min-height: 1px;
     padding-right: 0;
-    padding-left: 0; }
-  
-  .row {
+    padding-left: 0;
+}
+
+.row {
     margin-right: 0;
-    margin-left: 0; }
-  
-  .footer {
+    margin-left: 0;
+}
+
+.footer {
     margin-top: 0;
     padding-top: 0;
     padding-bottom: 0;
-    border-top: none; }
-  
-  .panel {
-    border:none; }
+    border-top: none;
+}
+
+.panel {
+    border: none;
+}
+
 //FOOTER
-.footerColor{
-  background-color: black;
-  p{
-    font-size: 19px;
-    margin-bottom: 0;
-  }
+.footerColor {
+    background-color: black;
+    p {
+        font-size: 19px;
+        margin-bottom: 0;
+    }
 }
-.facebookColor{
-  background-color: #143468;
+
+.facebookColor {
+    background-color: #143468;
 }
-.instagramColor{
-  background-color: #214897;
+
+.instagramColor {
+    background-color: #214897;
 }
-.twitterColor{
-  background-color: #18A1DB;
+
+.twitterColor {
+    background-color: #18A1DB;
 }
