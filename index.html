@@ -53,7 +53,7 @@
             <a class="hero--button btn btn-light mt-3 px-5">Bacon ipsum</a>
             <p class="hero--date text-white d-inline-block mt-4 mb-0">Acompañanos</p>
         </div>
-        <div class="d-flex col-10 offset-1 flex-column" >
+        <div class="d-flex col-10 offset-1 flex-column">
             <p class="hero--date mb-0 text-white d-inline-block text-center mt-5 mt-lg-0 text-lg-right">27 - 28<br> Agosto</p>
             <p class="hero--paragraph text-white text-center text-lg-right">UCR, Sede Nances Esparza</p>
         </div>
@@ -121,104 +121,32 @@
                         <a href="">
                             <i class="fas fa-trophy centralnav--icon"></i>
                         </a>
-                    </div>                
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-    <section  class="main--section__bg">
-        <div class="row"> 
+    <section class="main--section__bg">
+        <div class="row">
             <div class="col-md-12 mt-4 rounded-top">
                 <h1 class="main--subtitle text-center">Actividades</h1>
-                <p class="main--text col-md-6 text-center mx-auto mt-3">La carrera de Informática y Tecnología Multimedia les da la bienvenida a la Expomedia 2018. Te invitamos a que 
-                        asistas en las charlas y talleres impartidos por expertos invitados en su área de trabajo y estudiantes de la universidad
-                        como fotografía, diseño de páginas web, software libre, big data, creación de videojuegos, modelado en 3D entre otros</p>
+                <p class="main--text col-md-6 text-center mx-auto mt-3">La carrera de Informática y Tecnología Multimedia les da la bienvenida a la Expomedia 2018. Te invitamos a que asistas en las charlas y talleres impartidos por expertos invitados en su área de trabajo y estudiantes de la universidad como
+                    fotografía, diseño de páginas web, software libre, big data, creación de videojuegos, modelado en 3D entre otros</p>
             </div>
         </div>
-        <div class="table-responsive">
-                <div class="row justify-content-md-center">
-                    <div class="col-lg-8 col-md-12">
-                        <table class="table table-striped" id="dayOne">
+        <div class="table-responsive big-table">
+            <div class="row justify-content-md-center">
+                <div class="col-lg-8 col-md-12">
+                    <div id="dayOne">
+                        <table class="table mb-0">
                             <thead class="thead text-center main-table_text">
                                 <tr>
                                     <th scope="col" class="bg-light">Martes 27 de Agosto</th>
                                     <th scope="col"> <button class="btn text-muted py-0" onclick="loadDayTwo()">Miercoles 28 de Agosto </button></th>
                                 </tr>
                             </thead>
-                            <tbody class="text-center">
-                                <tr>
-                                    <td>
-                                        <small>hora</small>
-                                        <p class="font-weight-bold">8:00am</p>
-                                    </td>
-                                    <td>
-                                        <small>Actividad</small>
-                                        <p class="font-weight-bold">Lorem Ipsum</p>
-                                    </td>
-                                    <td>
-                                        <small>Conferensista</small>
-                                        <p class="font-weight-bold">Lorem Ipsum</p>
-                                    </td>
-                                    <td>
-                                        <small>Lugar</small>
-                                        <p class="font-weight-bold">Lorem Ipsum</p>
-                                    </td>
-                                    <td>
-                                        <a href="#" class="btn buttons-table rounded-pill mt-2 px-4 py-1" role="button">Inscribirse</a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <small>hora</small>
-                                        <p class="font-weight-bold">8:00am</p>
-                                    </td>
-                                    <td>
-                                        <small>Actividad</small>
-                                        <p class="font-weight-bold">Lorem Ipsum</p>
-                                    </td>
-                                    <td>
-                                        <small>Conferensista</small>
-                                        <p class="font-weight-bold">Lorem Ipsum</p>
-                                    </td>
-                                    <td>
-                                        <small>Lugar</small>
-                                        <p class="font-weight-bold">Lorem Ipsum</p>
-                                    </td>
-                                    <td>
-                                        <a href="#" class="btn buttons-table rounded-pill mt-2 px-4 py-1" role="button">Inscribirse</a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <small>hora</small>
-                                        <p class="font-weight-bold">8:00am</p>
-                                    </td>
-                                    <td>
-                                        <small>Actividad</small>
-                                        <p class="font-weight-bold">Lorem Ipsum</p>
-                                    </td>
-                                    <td>
-                                        <small>Conferensista</small>
-                                        <p class="font-weight-bold">Lorem Ipsum</p>
-                                    </td>
-                                    <td>
-                                        <small>Lugar</small>
-                                        <p class="font-weight-bold">Lorem Ipsum</p>
-                                    </td>
-                                    <td>
-                                        <a href="#" class="btn buttons-table rounded-pill mt-2 px-4 py-1" role="button">Inscribirse</a>
-                                    </td>
-                                </tr>
-                            </tbody>
                         </table>
-            
-                        <table class="table tableDisplay table-striped" id="dayTwo">
-                            <thead class="thead text-center main-table_text">
-                                <tr>
-                                    <th scope="col"><button class="btn text-muted py-0" onclick="loadDayOne()">Martes 27 de Agosto</button></th>
-                                    <th scope="col" class="bg-light">Miercoles 28 de Agosto</th>
-                                </tr>
-                            </thead>
+                        <table class="table table-striped">
                             <tbody class="text-center">
                                 <tr>
                                     <td>
@@ -286,8 +214,88 @@
                             </tbody>
                         </table>
                     </div>
+                    <div id="dayTwo" class="tableDisplay">
+                        <table class="table mb-0">
+                            <thead class="thead text-center main-table_text">
+                                <tr>
+                                    <th scope="col"><button class="btn text-muted py-0" onclick="loadDayOne()">Martes 27 de Agosto</button></th>
+                                    <th scope="col" class="bg-light">Miercoles 28 de Agosto</th>
+                                </tr>
+                            </thead>
+                        </table>
+                        <table class="table table-striped">
+                            <tbody class="text-center">
+                                <tr>
+                                    <td>
+                                        <small>hora</small>
+                                        <p class="font-weight-bold">8:00am</p>
+                                    </td>
+                                    <td>
+                                        <small>Actividad</small>
+                                        <p class="font-weight-bold">Lorem Ipsum</p>
+                                    </td>
+                                    <td>
+                                        <small>Conferensista</small>
+                                        <p class="font-weight-bold">Lorem Ipsum</p>
+                                    </td>
+                                    <td>
+                                        <small>Lugar</small>
+                                        <p class="font-weight-bold">Lorem Ipsum</p>
+                                    </td>
+                                    <td>
+                                        <a href="#" class="btn buttons-table rounded-pill mt-2 px-4 py-1" role="button">Inscribirse</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <small>hora</small>
+                                        <p class="font-weight-bold">8:00am</p>
+                                    </td>
+                                    <td>
+                                        <small>Actividad</small>
+                                        <p class="font-weight-bold">Lorem Ipsum</p>
+                                    </td>
+                                    <td>
+                                        <small>Conferensista</small>
+                                        <p class="font-weight-bold">Lorem Ipsum</p>
+                                    </td>
+                                    <td>
+                                        <small>Lugar</small>
+                                        <p class="font-weight-bold">Lorem Ipsum</p>
+                                    </td>
+                                    <td>
+                                        <a href="#" class="btn buttons-table rounded-pill mt-2 px-4 py-1" role="button">Inscribirse</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <small>hora</small>
+                                        <p class="font-weight-bold">8:00am</p>
+                                    </td>
+                                    <td>
+                                        <small>Actividad</small>
+                                        <p class="font-weight-bold">Lorem Ipsum</p>
+                                    </td>
+                                    <td>
+                                        <small>Conferensista</small>
+                                        <p class="font-weight-bold">Lorem Ipsum</p>
+                                    </td>
+                                    <td>
+                                        <small>Lugar</small>
+                                        <p class="font-weight-bold">Lorem Ipsum</p>
+                                    </td>
+                                    <td>
+                                        <a href="#" class="btn buttons-table rounded-pill mt-2 px-4 py-1" role="button">Inscribirse</a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
                 </div>
             </div>
+        </div>
+        <div class="small-table">
             <div class="tableDisplay" id="table2">
                 <table class="table mb-0">
                     <thead class="">
@@ -318,7 +326,7 @@
                                         <div class="">
                                             <p><span class="font-weight-bold">Conferesista:</span> Loren Ipusm</p>
                                             <p><span class="font-weight-bold">Lugar:</span> N1</p>
-            
+
                                             <a href="#" class="btn buttons-table rounded-pill mt-2 px-4 py-1" role="button">Inscribirse</a>
                                         </div>
                                     </div>
@@ -337,13 +345,13 @@
                                         <div class="">
                                             <p><span class="font-weight-bold">Conferesista:</span> Loren Ipusm</p>
                                             <p><span class="font-weight-bold">Lugar:</span> N1</p>
-            
+
                                             <a href="#" class="btn buttons-table rounded-pill mt-2 px-4 py-1" role="button">Inscribirse</a>
                                         </div>
                                     </div>
                                 </div>
                             </td>
-            
+
                         </tr>
                         <tr>
                             <td>
@@ -357,7 +365,7 @@
                                         <div class="">
                                             <p><span class="font-weight-bold">Conferesista:</span> Loren Ipusm</p>
                                             <p><span class="font-weight-bold">Lugar:</span> N1</p>
-            
+
                                             <a href="#" class="btn buttons-table rounded-pill mt-2 px-4 py-1" role="button">Inscribirse</a>
                                         </div>
                                     </div>
@@ -397,7 +405,7 @@
                                         <div class="">
                                             <p><span class="font-weight-bold">Conferesista:</span> Loren Ipusm</p>
                                             <p><span class="font-weight-bold">Lugar:</span> N1</p>
-            
+
                                             <a href="#" class="btn buttons-table rounded-pill mt-2 px-4 py-1" role="button">Inscribirse</a>
                                         </div>
                                     </div>
@@ -416,13 +424,13 @@
                                         <div class="">
                                             <p><span class="font-weight-bold">Conferesista:</span> Loren Ipusm</p>
                                             <p><span class="font-weight-bold">Lugar:</span> N1</p>
-            
+
                                             <a href="#" class="btn buttons-table rounded-pill mt-2 px-4 py-1" role="button">Inscribirse</a>
                                         </div>
                                     </div>
                                 </div>
                             </td>
-            
+
                         </tr>
                         <tr>
                             <td>
@@ -436,7 +444,7 @@
                                         <div class="">
                                             <p><span class="font-weight-bold">Conferesista:</span> Loren Ipusm</p>
                                             <p><span class="font-weight-bold">Lugar:</span> N1</p>
-            
+
                                             <a href="#" class="btn buttons-table rounded-pill mt-2 px-4 py-1" role="button">Inscribirse</a>
                                         </div>
                                     </div>
@@ -446,6 +454,7 @@
                     </tbody>
                 </table>
             </div>
+        </div>
     </section>
     <footer>
         <div class="row">
@@ -472,13 +481,13 @@
     <script>
         function loadDayTwo() {
             $('#dayOne').css('display', 'none');
-            $('#dayTwo').css('display', 'table');
+            $('#dayTwo').css('display', 'block');
             $('#table1').css('display', 'none');
             $('#table2').css('display', 'block');
         }
-    
+
         function loadDayOne() {
-            $('#dayOne').css('display', 'table');
+            $('#dayOne').css('display', 'block');
             $('#dayTwo').css('display', 'none');
             $('#table2').css('display', 'none');
             $('#table1').css('display', 'block');
