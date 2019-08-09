@@ -27,6 +27,25 @@ body{
   background: linear-gradient(137deg, #19a1db 0%, #204898 38%, #582e8e 59%, #de4799 92%, #f37323 100%);
   z-index: -10;
 }
+.navbar--btn__zindex{
+  z-index: 3;
+}
+.navbar-overlay{
+  background-color: rgba($color: #000000, $alpha: 0.7);
+  position: fixed;
+  top: 0em;
+  width: 100%;
+  left: 0px;
+  padding: 10em 2em 1em;
+  z-index: 2;
+  height: 100vh;
+  @include respond-to(extra-large-screens) {
+    background-color: transparent;
+    position: unset;
+    height: unset;
+    padding: unset;
+  }
+}
 .section--cutout{
   position: absolute;
   width: 100%;
@@ -125,7 +144,7 @@ body{
     }*/
 
 //reset bootstrap
-/*
+
 html,body {
     height: 100%; margin: 0px; padding: 0px; }
   
@@ -172,8 +191,6 @@ html,body {
   
   .panel {
     border:none; }
-
-*/
 //FOOTER
 .footerColor{
   background-color: black;
