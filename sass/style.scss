@@ -15,31 +15,68 @@ body{
 }
 .background--particles {
   position: absolute;
-  height: 88vh;
+  height: 82vh;
+  @include respond-to(small-screens) {
+    height: 75vh  ;
+  }
+  @include respond-to(extra-large-screens) {
+    height: 75vh;
+  }
   width: 100%;
   background: #19a1db;
   background: linear-gradient(137deg, #19a1db 0%, #204898 38%, #582e8e 59%, #de4799 92%, #f37323 100%);
   z-index: -10;
+}
+.navbar--btn__zindex{
+  z-index: 3;
+}
+.navbar-overlay{
+  background-color: rgba($color: #000000, $alpha: 0.7);
+  position: fixed;
+  top: 0em;
+  width: 100%;
+  left: 0px;
+  padding: 10em 2em 1em;
+  z-index: 2;
+  height: 100vh;
+  @include respond-to(large-screens) {
+    background-color: transparent;
+    position: unset;
+    height: unset;
+    padding: unset;
+  }
 }
 .section--cutout{
   position: absolute;
   width: 100%;
   height: 431px;
   overflow: hidden;
-  top: 48vh;
-  @include respond-to(large-screens) {
-    top: 48vh;
+  top: 22em;
+  @include respond-to(extra-large-screens) {
+    top: 25em;
   }
 }
 .section--cutout__height{
   height: 50vh;
+  @include respond-to(small-screens) {
+    height: 47vh  ;
+  }
+  @include respond-to(medium-screens) {
+    height: 36vh  ;
+  }
+  @include respond-to(large-screens) {
+    height: 18vh  ;
+  }
+  @include respond-to(extra-large-screens) {
+    height: 28vh  ;
+  }
 }
 .section--cutout__img{
   position: absolute;
-  width: 41em;
+  width: 90em;
   z-index: -9;
   @include respond-to(large-screens) {
-    width: 51em;
+    width: 112em;
   }
   &.right{
     transform: scaleX(-1);
@@ -52,12 +89,12 @@ body{
 }
 .centralnav--container{
   z-index: 1;
-  top: 61vh;
+  top: 30em;
   @include respond-to(large-screens) {
-    top: 65vh;
+    top: 36em;
   }
   @include respond-to(extra-large-screens) {
-    top: 78vh;
+    top: 40em;
   }
   .centralnav--container__left, .centralnav--container__right{
     width: 38%;
@@ -87,6 +124,9 @@ body{
     }    
   }
 }
+.main--section__bg{
+  background-color: #fff;
+}
    /* .section-index__select{
         background-color: $backgroundBody;
         display: block;
@@ -107,6 +147,7 @@ body{
     }*/
 
 //reset bootstrap
+
 html,body {
     height: 100%; margin: 0px; padding: 0px; }
   
@@ -153,8 +194,6 @@ html,body {
   
   .panel {
     border:none; }
-
-
 //FOOTER
 .footerColor{
   background-color: black;

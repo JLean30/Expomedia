@@ -1,8 +1,14 @@
+$break-extraSmall: 350px;
 $break-small: 576px;
 $break-medium: 768px;
 $break-large: 992px;
 $break-extraLarge: 1200px;
-@mixin respond-to($media) {
+@mixin respond-to($media) {    
+    @if $media==extra-small-screens {
+        @media (min-width: $break-extraSmall) {
+            @content;
+        }
+    }
     @if $media==small-screens {
         @media (min-width: $break-small) {
             @content;
