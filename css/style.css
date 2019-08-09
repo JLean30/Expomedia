@@ -130,7 +130,7 @@ body {
       height: 75vh; } }
   @media (min-width: 1200px) {
     .background--particles {
-      height: 75vh; } }
+      height: 82vh; } }
 
 .navbar--btn__zindex {
   z-index: 3; }
@@ -174,7 +174,7 @@ body {
       height: 18vh; } }
   @media (min-width: 1200px) {
     .section--cutout__height {
-      height: 28vh; } }
+      height: 34vh; } }
 
 .section--cutout__img {
   position: absolute;

@@ -23,7 +23,7 @@ body {
         height: 75vh;
     }
     @include respond-to(extra-large-screens) {
-        height: 75vh;
+        height: 82vh;
     }
     width: 100%;
     background: #19a1db;
@@ -75,7 +75,7 @@ body {
         height: 18vh;
     }
     @include respond-to(extra-large-screens) {
-        height: 28vh;
+        height: 34vh;
     }
 }
 
