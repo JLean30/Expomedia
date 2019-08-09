@@ -5,7 +5,7 @@ $tabletext: #800080;
 body {
     font-size: 15px;
     font-family: 'roboto';
-    background-color: white;
+    background-color: #3f3f3f;
 }
 
 .logo {
@@ -64,7 +64,7 @@ body {
 }
 
 .section--cutout__height {
-    height: 50vh;
+    height: 61vh;
     @include respond-to(small-screens) {
         height: 47vh;
     }
