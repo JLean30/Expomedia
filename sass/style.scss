@@ -39,7 +39,7 @@ body{
   padding: 10em 2em 1em;
   z-index: 2;
   height: 100vh;
-  @include respond-to(extra-large-screens) {
+  @include respond-to(large-screens) {
     background-color: transparent;
     position: unset;
     height: unset;
@@ -68,7 +68,7 @@ body{
     height: 18vh  ;
   }
   @include respond-to(extra-large-screens) {
-    height: 39vh  ;
+    height: 28vh  ;
   }
 }
 .section--cutout__img{
@@ -123,6 +123,9 @@ body{
       }
     }    
   }
+}
+.main--section__bg{
+  background-color: #fff;
 }
    /* .section-index__select{
         background-color: $backgroundBody;

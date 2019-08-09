@@ -99,65 +99,13 @@
   font-size: 2em;
   float: right; }
 
-.char1 {
-  transform: rotate(-73deg); }
+.main--subtitle {
+  font-family: 'lemonmilk';
+  color: #3f3f3f; }
 
-.char2 {
-  transform: rotate(-69deg); }
-
-.char3 {
-  transform: rotate(-65deg); }
-
-.char4 {
-  transform: rotate(-57deg); }
-
-.char5 {
-  transform: rotate(-53deg); }
-
-.char6 {
-  transform: rotate(-49deg); }
-
-.char7 {
-  transform: rotate(-45deg); }
-
-.char8 {
-  transform: rotate(-39deg); }
-
-.char9 {
-  transform: rotate(-35deg); }
-
-.char10 {
-  transform: rotate(-31deg); }
-
-.char11 {
-  transform: rotate(-27deg); }
-
-.char12 {
-  transform: rotate(-23deg); }
-
-.char13 {
-  transform: rotate(-19deg); }
-
-.char14 {
-  transform: rotate(-13deg); }
-
-.char15 {
-  transform: rotate(-9deg); }
-
-.char16 {
-  transform: rotate(-5deg); }
-
-.char17 {
-  transform: rotate(-1deg); }
-
-.char18 {
-  transform: rotate(3deg); }
-
-.char19 {
-  transform: rotate(7deg); }
-
-.char20 {
-  transform: rotate(11deg); }
+.main--text {
+  font-family: 'roboto';
+  color: #3f3f3f; }
 
 body {
   font-size: 15px;
@@ -196,7 +144,7 @@ body {
   padding: 10em 2em 1em;
   z-index: 2;
   height: 100vh; }
-  @media (min-width: 1200px) {
+  @media (min-width: 992px) {
     .navbar-overlay {
       background-color: transparent;
       position: unset;
@@ -226,7 +174,7 @@ body {
       height: 18vh; } }
   @media (min-width: 1200px) {
     .section--cutout__height {
-      height: 39vh; } }
+      height: 28vh; } }
 
 .section--cutout__img {
   position: absolute;
@@ -273,6 +221,9 @@ body {
         @media (min-width: 992px) {
           .centralnav--container .centralnav--element .centralnav--icon.big {
             font-size: 10em; } }
+
+.main--section__bg {
+  background-color: #fff; }
 
 /* .section-index__select{
         background-color: $backgroundBody;
