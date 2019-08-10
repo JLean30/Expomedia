@@ -327,9 +327,21 @@ body {
 }
 //propiedades card
 .cover {object-fit: cover;}
+.w-90{
+    width: 90% !important;
+}
 
 .card{
     border: none !important;
+    max-width: 93%;
+    /*$break-small: 576px;
+$break-medium: 768px;
+$break-large: 992px;*/
+@include respond-to(medium-screens) {
+    max-width: 93%;
+}
+
+
 }
 
 .card-btn{
