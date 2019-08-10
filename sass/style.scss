@@ -325,7 +325,28 @@ body {
 .panel {
     border: none;
 }
+//propiedades card
+.cover {object-fit: cover;}
 
+.card{
+    border: none !important;
+}
+
+.card-btn{
+     background: rgb(25,161,219);
+    background: -moz-linear-gradient(137deg, rgba(25,161,219,1) 0%, rgba(88,46,142,1) 53%);
+    background: -webkit-linear-gradient(137deg, rgba(25,161,219,1) 0%, rgba(88,46,142,1) 53%);
+    background: linear-gradient(137deg, rgba(25,161,219,1) 0%, rgba(88,46,142,1) 53%);
+   
+  
+    cursor: pointer;
+
+    transition: 0.4s ease-in;
+    background-size: 200% auto;
+ &:hover {
+    background-position: right center; /* change the direction of the change here */
+  }
+}
 //FOOTER
 .footerColor {
     background-color: black;

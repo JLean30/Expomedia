@@ -406,6 +406,24 @@ body {
 .panel {
   border: none; }
 
+.cover {
+  object-fit: cover; }
+
+.card {
+  border: none !important; }
+
+.card-btn {
+  background: #19a1db;
+  background: -moz-linear-gradient(137deg, #19a1db 0%, #582e8e 53%);
+  background: -webkit-linear-gradient(137deg, #19a1db 0%, #582e8e 53%);
+  background: linear-gradient(137deg, #19a1db 0%, #582e8e 53%);
+  cursor: pointer;
+  transition: 0.4s ease-in;
+  background-size: 200% auto; }
+  .card-btn:hover {
+    background-position: right center;
+    /* change the direction of the change here */ }
+
 .footerColor {
   background-color: black; }
   .footerColor p {
