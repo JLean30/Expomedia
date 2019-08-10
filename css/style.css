@@ -99,6 +99,14 @@
   font-size: 2em;
   float: right; }
 
+.hero--title {
+  font-family: 'lemonmilk';
+  color: #fff;
+  font-size: 3em; }
+
+.hero--h1 {
+  font-family: 'roboto'; }
+
 .main--subtitle {
   font-family: 'lemonmilk';
   color: #3f3f3f; }
@@ -106,6 +114,20 @@
 .main--text {
   font-family: 'roboto';
   color: #3f3f3f; }
+
+.speaker--card {
+  color: #3f3f3f; }
+  .speaker--card .speaker--name {
+    font-family: 'roboto-black'; }
+  .speaker--card .speaker--title {
+    font-size: 1.75em; }
+  .speaker--card .speaker--ability {
+    font-family: 'roboto-medium';
+    font-size: 1.5em; }
+  .speaker--card .dot {
+    height: 0.75em;
+    width: 0.75em;
+    background-color: #143468; }
 
 body {
   font-size: 15px;
@@ -160,6 +182,8 @@ body {
   @media (min-width: 1200px) {
     .section--cutout {
       top: 25em; } }
+  .section--cutout.secondary {
+    top: 9em; }
 
 .section--cutout__height {
   height: 61vh; }
@@ -175,6 +199,8 @@ body {
   @media (min-width: 1200px) {
     .section--cutout__height {
       height: 34vh; } }
+  .section--cutout__height.secondary {
+    height: 28vh; }
 
 .section--cutout__img {
   position: absolute;
@@ -199,6 +225,8 @@ body {
   @media (min-width: 1200px) {
     .centralnav--container {
       top: 40em; } }
+  .centralnav--container.secondary {
+    top: 20em; }
   .centralnav--container .centralnav--container__left,
   .centralnav--container .centralnav--container__right {
     width: 38%;
@@ -222,6 +250,14 @@ body {
         @media (min-width: 992px) {
           .centralnav--container .centralnav--element .centralnav--icon.big {
             font-size: 10em; } }
+    .centralnav--container .centralnav--element.speaker {
+      width: 20em;
+      height: 20em;
+      border: 1.5em solid #fff; }
+      .centralnav--container .centralnav--element.speaker img {
+        height: 18em;
+        width: auto;
+        bottom: 1em; }
 
 .main--section__bg {
   background-color: #fff; }
@@ -253,6 +289,18 @@ body {
   @media (min-width: 992px) {
     .big-table {
       display: block; } }
+
+.speaker--card .speaker--social {
+  font-size: 2em; }
+  .speaker--card .speaker--social.blue {
+    background-color: #143468; }
+  .speaker--card .speaker--social.pink {
+    background-color: #de4799; }
+  .speaker--card .speaker--social.lightblue {
+    background-color: #18A1DB; }
+
+.bg--grey {
+  background-color: #3f3f3f; }
 
 /* .section-index__select{
         background-color: $backgroundBody;

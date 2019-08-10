@@ -22,6 +22,14 @@
     font-size: 2em;
     float: right;
 }
+.hero--title{    
+    font-family: 'lemonmilk';
+    color: #fff;
+    font-size: 3em;
+}
+.hero--h1{
+    font-family: 'roboto';
+}
 .main--subtitle{
     font-family: 'lemonmilk';
     color: #3f3f3f;
@@ -29,4 +37,22 @@
 .main--text{
     font-family: 'roboto';
     color: #3f3f3f;
+}
+.speaker--card{
+    color: #3f3f3f;
+    .speaker--name{
+        font-family: 'roboto-black';
+    }
+    .speaker--title{
+        font-size: 1.75em;
+    }
+    .speaker--ability{
+        font-family: 'roboto-medium';
+        font-size: 1.5em;  
+    }
+    .dot{
+        height: 0.75em;
+        width: 0.75em;
+        background-color: #143468;
+    }
 }
