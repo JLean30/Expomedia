@@ -125,29 +125,35 @@
             </div>
         </div>
     </section>
-    <section id="form">
-        <div class="row bg-light pt-5">
-            <div class="col-8 mx-auto mb-5">
-                <form id="form-inscripcion">
-                    <div class="form-group">
-                        <label for="exampleInputEmail1">Nombre Completo</label>
-                        <input type="text" class="form-control" id="nombreCompleto" aria-describedby="emailHelp"
-                            placeholder="Escribe tu nombre completo">
-                    </div>
-                    <div class="form-group">
-                        <label for="exampleInputPassword1">carné</label>
-                        <input type="text" class="form-control" id="carne" placeholder="Escribe tu número de carné">
-                    </div>
-                    <div class="form-group">
-                        <label for="exampleFormControlSelect1">Taller</label>
-                        <select class="form-control" id="taller">
-                            <option value="default" default>Elige el taller</option>
-                            <option value="2">2</option>
-                            <option>3</option>
-                            <option>4</option>
-                            <option>5</option>
-                        </select>
-                    </div>
+    <div class="row bg-light pt-5">
+        <div class="col-8 mx-auto mb-5">
+            <form id="form-inscripcion">
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Nombre Completo</label>
+                    <input type="text" class="form-control" id="nombreCompleto" aria-describedby="emailHelp"
+                        placeholder="Escribe tu nombre completo">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword1">carné</label>
+                    <input type="text" class="form-control" id="carne" placeholder="Escribe tu número de carné">
+                </div>
+                <div class="form-group">
+                    <label for="exampleFormControlSelect1">Taller</label>
+                    <select class="form-control" id="taller">
+                        <option value="" default>Elige el taller</option>
+                        <option disabled> Talleres del Martes 27 de Agosto</option>
+                        <option value="Taller introductorio de Unreal 
+                        Andrés Chinchilla - Aula N01">Taller introductorio de Unreal 
+                        Andrés Chinchilla - Aula N01- Hora 9:00am</option>
+                        <option value="Esencial Costa Rica, Economía Naranja
+                        Kevin Villalta - Aula N03">Esencial Costa Rica, Economía Naranja
+                        Kevin Villalta - Aula N03 - Hora 9:00 am</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option disabled> Talleres del Miercoles 28 de Agosto</option>
+                    </select>
+                    <small>¡Recuerda no incribirte en dos talleres en la misma hora!</small>
+                </div>
 
                     <button id="enviar-inscripcion" class="btn btn-primary col-4 ">Inscribirse</button>
                 </form>
@@ -181,11 +187,11 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
     </script>
     <script src="js/particles.js"></script>
-    <script src="js/app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/6.3.5/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/6.2.3/firebase-auth.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/6.2.3/firebase-database.js"></script>
-    <script src="./js/form.js"></script>
+    <script  src="js/app.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/6.3.5/firebase-app.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/6.2.3/firebase-auth.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/6.2.3/firebase-database.js"></script>
+    <script defer src="./js/form.js"></script>
 </body>
 
 </html>
