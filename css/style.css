@@ -186,7 +186,7 @@ body {
     .section--cutout {
       top: 25em; } }
   .section--cutout.secondary {
-    top: 9em; }
+    top: 12em; }
 
 .section--cutout__height {
   height: 61vh; }
@@ -229,7 +229,7 @@ body {
     .centralnav--container {
       top: 40em; } }
   .centralnav--container.secondary {
-    top: 20em; }
+    top: 23em; }
   .centralnav--container .centralnav--container__left,
   .centralnav--container .centralnav--container__right {
     width: 38%;
