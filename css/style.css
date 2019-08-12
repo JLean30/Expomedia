@@ -129,6 +129,9 @@
     width: 0.75em;
     background-color: #143468; }
 
+html {
+  scroll-behavior: smooth; }
+
 body {
   font-size: 15px;
   font-family: 'roboto';
@@ -405,6 +408,34 @@ body {
 
 .panel {
   border: none; }
+
+.cover {
+  object-fit: cover; }
+
+.w-90 {
+  width: 90% !important; }
+
+.card {
+  border: none !important;
+  max-width: 93%;
+  /*$break-small: 576px;
+$break-medium: 768px;
+$break-large: 992px;*/ }
+  @media (min-width: 768px) {
+    .card {
+      max-width: 93%; } }
+
+.card-btn {
+  background: #19a1db;
+  background: -moz-linear-gradient(137deg, #19a1db 0%, #582e8e 53%);
+  background: -webkit-linear-gradient(137deg, #19a1db 0%, #582e8e 53%);
+  background: linear-gradient(137deg, #19a1db 0%, #582e8e 53%);
+  cursor: pointer;
+  transition: 0.4s ease-in;
+  background-size: 200% auto; }
+  .card-btn:hover {
+    background-position: right center;
+    /* change the direction of the change here */ }
 
 .footerColor {
   background-color: black; }
