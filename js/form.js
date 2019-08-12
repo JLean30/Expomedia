@@ -16,31 +16,39 @@ $(document).ready(function () {
     const form = document.getElementById('form-inscripcion'); // Obtenemos la referencia al formulario
     $('#enviar-inscripcion').click(function () {
         event.preventDefault();
-        var nombreCompleto = $('#nombreCompleto').val();
-        var carne = $('#carne').val();
-        var taller = $("#taller").val();
-        db.ref("inscripciones/"+taller).orderByChild("carne").equalTo(carne).once("value", snapshot => {
-            if (snapshot.exists()) {
-                alert("ya estas inscrito ");
-            } else {
-                db.ref("inscripciones/"+taller).push({
-                    nombreCompleto: nombreCompleto,
-                    carne: carne,
-                    taller: taller,
-                }, function (error) {
-                    if (error) {
-                        // The write failed...
-                        console.log("shit");
-                    } else {
-                        // Data saved successfully!
-                        console.log("Wiiii");
-                        alert("inscripcion enviada");
-                        form.reset(); // borramos todos los campos. 
-                    }
-                });
+        if ($('#taller').val().trim() === '') {
+            alert('Debe seleccionar un taller');
 
-            }
-        });
+        } else {
+            
+            var nombreCompleto = $('#nombreCompleto').val();
+            var carne = $('#carne').val();
+            var taller = $("#taller").val();
+            db.ref("inscripciones/" + taller).orderByChild("carne").equalTo(carne).once("value", snapshot => {
+                if (snapshot.exists()) {
+                    alert("ya estas inscrito ");
+                } else {
+                    db.ref("inscripciones/" + taller).push({
+                        nombreCompleto: nombreCompleto,
+                        carne: carne,
+                        taller: taller,
+                    }, function (error) {
+                        if (error) {
+                            // The write failed...
+                            console.log("shit");
+                        } else {
+                            // Data saved successfully!
+                            console.log("Wiiii");
+                            alert("inscripcion enviada");
+                            form.reset(); // borramos todos los campos. 
+                        }
+                    });
+
+                }
+
+            });
+
+        };
 
 
 
