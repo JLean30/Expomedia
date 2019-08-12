@@ -2,6 +2,10 @@
 @import 'media-queries';
 $backgroundBody: #525659;
 $tabletext: #800080;
+html {
+    scroll-behavior: smooth;
+  }
+  
 body {
     font-size: 15px;
     font-family: 'roboto';
