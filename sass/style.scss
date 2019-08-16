@@ -84,7 +84,16 @@ body {
         height: 34vh;
     }
     &.secondary {
-        height: 28vh;
+        height: 37vh;
+        @include respond-to(large-screens) {
+            height: 28vh;
+        }
+    }
+    &.third{
+        height: 55vh;
+        @include respond-to(large-screens) {
+            height: 35vh;
+        }
     }
 }
 

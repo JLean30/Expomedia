@@ -46,9 +46,16 @@
     color: #3f3f3f;
     .speaker--name{
         font-family: 'roboto-black';
+        font-size: 1.25em;
+        @include respond-to(large-screens) {
+            font-size: 1.75em;
+        }
     }
     .speaker--title{
-        font-size: 1.75em;
+        font-size: 1.25em;
+        @include respond-to(large-screens) {
+            font-size: 1.75em;
+        }
     }
     .speaker--ability{
         font-family: 'roboto-medium';

@@ -121,9 +121,16 @@
 .speaker--card {
   color: #3f3f3f; }
   .speaker--card .speaker--name {
-    font-family: 'roboto-black'; }
+    font-family: 'roboto-black';
+    font-size: 1.25em; }
+    @media (min-width: 992px) {
+      .speaker--card .speaker--name {
+        font-size: 1.75em; } }
   .speaker--card .speaker--title {
-    font-size: 1.75em; }
+    font-size: 1.25em; }
+    @media (min-width: 992px) {
+      .speaker--card .speaker--title {
+        font-size: 1.75em; } }
   .speaker--card .speaker--ability {
     font-family: 'roboto-medium';
     font-size: 1.5em; }
@@ -206,7 +213,15 @@ body {
     .section--cutout__height {
       height: 34vh; } }
   .section--cutout__height.secondary {
-    height: 28vh; }
+    height: 37vh; }
+    @media (min-width: 992px) {
+      .section--cutout__height.secondary {
+        height: 28vh; } }
+  .section--cutout__height.third {
+    height: 55vh; }
+    @media (min-width: 992px) {
+      .section--cutout__height.third {
+        height: 35vh; } }
 
 .section--cutout__img {
   position: absolute;
