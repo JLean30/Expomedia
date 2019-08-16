@@ -1,5 +1,4 @@
 @import 'text';
-@import 'media-queries';
 $backgroundBody: #525659;
 $tabletext: #800080;
 html {
@@ -116,7 +115,10 @@ body {
         top: 40em;
     }
     &.secondary {
-        top: 23em;
+        top: 16em;
+        @include respond-to(large-screens) {
+            top: 23em;
+        }
     }
     .centralnav--container__left,
     .centralnav--container__right {
@@ -146,9 +148,13 @@ body {
             }
         }
         &.speaker {
-            width: 20em;
-            height: 20em;
+            width: 17em;
+            height: 17em;
             border: 1.5em solid #fff;
+            @include respond-to(large-screens) {
+                width: 20em;
+                height: 20em;
+            }
             img {
                 height: 18em;
                 width: auto;
@@ -213,6 +219,13 @@ body {
 
 .bg--grey {
     background-color: #3f3f3f;
+}
+.border--left{
+    border-top: 1px solid #18A1DB;
+    @include respond-to(large-screens) {
+        border-top: none;
+        border-left: 1px solid #18A1DB;
+    }
 }
 
 

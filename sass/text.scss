@@ -1,4 +1,5 @@
 @import 'fonts';
+@import 'media-queries';
 
 .hero--paragraph{
     font-size: 1.2em;
@@ -26,7 +27,9 @@
 .hero--title{    
     font-family: 'lemonmilk';
     color: #fff;
-    font-size: 3em;
+    @include respond-to(large-screens) {
+        font-size: 3em;
+    }
 }
 .hero--h1{
     font-family: 'roboto';

@@ -102,8 +102,10 @@
 
 .hero--title {
   font-family: 'lemonmilk';
-  color: #fff;
-  font-size: 3em; }
+  color: #fff; }
+  @media (min-width: 992px) {
+    .hero--title {
+      font-size: 3em; } }
 
 .hero--h1 {
   font-family: 'roboto'; }
@@ -230,7 +232,10 @@ body {
     .centralnav--container {
       top: 40em; } }
   .centralnav--container.secondary {
-    top: 23em; }
+    top: 16em; }
+    @media (min-width: 992px) {
+      .centralnav--container.secondary {
+        top: 23em; } }
   .centralnav--container .centralnav--container__left,
   .centralnav--container .centralnav--container__right {
     width: 38%;
@@ -255,9 +260,13 @@ body {
           .centralnav--container .centralnav--element .centralnav--icon.big {
             font-size: 10em; } }
     .centralnav--container .centralnav--element.speaker {
-      width: 20em;
-      height: 20em;
+      width: 17em;
+      height: 17em;
       border: 1.5em solid #fff; }
+      @media (min-width: 992px) {
+        .centralnav--container .centralnav--element.speaker {
+          width: 20em;
+          height: 20em; } }
       .centralnav--container .centralnav--element.speaker img {
         height: 18em;
         width: auto;
@@ -305,6 +314,13 @@ body {
 
 .bg--grey {
   background-color: #3f3f3f; }
+
+.border--left {
+  border-top: 1px solid #18A1DB; }
+  @media (min-width: 992px) {
+    .border--left {
+      border-top: none;
+      border-left: 1px solid #18A1DB; } }
 
 /* .section-index__select{
         background-color: $backgroundBody;
