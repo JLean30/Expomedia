@@ -131,13 +131,6 @@
     @media (min-width: 992px) {
       .speaker--card .speaker--title {
         font-size: 1.75em; } }
-  .speaker--card .speaker--ability {
-    font-family: 'roboto-medium';
-    font-size: 1.5em; }
-  .speaker--card .dot {
-    height: 0.75em;
-    width: 0.75em;
-    background-color: #143468; }
 
 html {
   scroll-behavior: smooth; }
