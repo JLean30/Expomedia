@@ -218,10 +218,10 @@ body {
       .section--cutout__height.secondary {
         height: 28vh; } }
   .section--cutout__height.third {
-    height: 55vh; }
+    height: 22em; }
     @media (min-width: 992px) {
       .section--cutout__height.third {
-        height: 35vh; } }
+        height: 20em; } }
 
 .section--cutout__img {
   position: absolute;
@@ -286,6 +286,11 @@ body {
         height: 18em;
         width: auto;
         bottom: 1em; }
+      .centralnav--container .centralnav--element.speaker .hookbots {
+        height: 16em; }
+        @media (min-width: 992px) {
+          .centralnav--container .centralnav--element.speaker .hookbots {
+            height: 18em; } }
 
 .main--section__bg {
   background-color: #fff; }
