@@ -76,6 +76,17 @@ const conferencistas = [{
         twitter: ''
     },
     {
+        name: 'Luis Diego Hidalgo',
+        imagen: 'img/conferencista/luisDiego.jpg',
+        right: '0', //Esto define que tan a la izquierda se va a desplazar la imagen de la persona en el circulo
+        title: 'Estudiante',
+        descripcion: 'Estudiante de ultimo año de Ingeniería Mecánica de la UCR y Técnico en mantenimiento de aeronaves (Licencia MT2)',
+        descripcion2: 'Más información sobre Luis:',
+        facebook: 'https://www.facebook.com/luisdiego11',
+        instagram: '',
+        twitter: ''
+    },
+    {
         name: 'Marcos Molina',
         imagen: 'img/conferencista/marcos.jpg',
         right: '0', //Esto define que tan a la izquierda se va a desplazar la imagen de la persona en el circulo
