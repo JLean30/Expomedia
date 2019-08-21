@@ -24,6 +24,7 @@ let app = firebase.initializeApp(firebaseConfig);
 let db = app.database();
 const form = document.getElementById('form-inscripcion'); // Obtenemos la referencia al formulario
 $(document).ready(function () {
+    $("#form").attr("hidden", false);
     $("#dia").change(function () {
         if ($('#dia').val().trim() != '') {
             $("#form-taller").attr("hidden", true);
@@ -44,6 +45,14 @@ $(document).ready(function () {
             $("#form-taller").attr("hidden", true);
         }
     });
+    //habilitar button
+    $('#taller').change(function () {
+        if (($('#taller').val().trim() != '')) {
+            $("#enviar-inscripcion").attr("disabled", false);
+        } else {
+            $("#enviar-inscripcion").attr("disabled", true);
+        }
+    });
 
     //talleres segun hora
     $("#hora").change(function () {
@@ -53,13 +62,13 @@ $(document).ready(function () {
         horaMiercoles();
     });
 
-    $("#enviar-inscripcion").click(function (e) {
+    $("#enviar-inscripcion").click(function () {
 
-        if ($('#taller').val().trim() === '') {
-            alert('Debe seleccionar un taller');
+        if ($('#taller').val().trim() === '' || $('#carne').val().trim() === "" || $('#nombreCompleto').val().trim() === "") {
+
 
         } else {
-            e.preventDefault();
+            event.preventDefault();
             var nombreCompleto = $('#nombreCompleto').val();
             var carne = $('#carne').val();
             var taller = $("#taller").val();
@@ -87,13 +96,14 @@ $(document).ready(function () {
                                     update = limite - 1;
                                     db.ref("inscripciones/" + taller).update({
                                         limite: update
-                                        
+
                                     });
                                     $("#form-taller").attr("hidden", true);
                                     $("#hora").attr("hidden", true);
                                     $("#hora2").attr("hidden", true);
+                                    $("#form-taller").attr("hidden", true);
                                     form.reset();
-
+                                    $("#enviar-inscripcion").attr("disabled", true);
 
                                 }
                             });
@@ -105,11 +115,6 @@ $(document).ready(function () {
             });
         }
     });
-
-
-
-
-
 
     function horaMartes() {
         if ($('#hora').val().trim() != '') {
