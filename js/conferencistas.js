@@ -36,7 +36,7 @@ const conferencistas = [{
         imagen: 'img/conferencista/brandonCisneros.jpg',
         right: '0', //Esto define que tan a la izquierda se va a desplazar la imagen de la persona en el circulo
         title: 'Estudiante',
-        descripcion: 'Actualmente es estudiante de la carrera de Informatica y Tecnología Multimedia de la Universidad de Costa Rica. Le apasiona el area de seguridad informática y lo que es el dibujo digital.',
+        descripcion: 'Actualmente es estudiante de la carrera de Informática y Tecnología Multimedia, de segundo año. Apasionado de la informática como tal, le gusta el conocimiento sobre software y la reparación y modificación del hardware. Es Técnico en IT, razón por la cual le gusta investigar todo lo que se relaciona en este aspecto, y ponerlo en práctica, en especial el área de la seguridad informática, sus riesgos e implicaciones en la red',
         descripcion2: 'Más información sobre Brandon:',
         facebook: 'https://www.facebook.com/Braghoick',
         instagram: 'https://www.instagram.com/braghoick/',
@@ -65,11 +65,11 @@ const conferencistas = [{
         twitter: ''
     },
     {
-        name: 'Carlos Bogarin',
+        name: 'Carlos Bogarín',
         imagen: 'img/conferencista/carlosBogarin.jpg',
         right: '0', //Esto define que tan a la izquierda se va a desplazar la imagen de la persona en el circulo
         title: 'Estudiante',
-        descripcion: '',
+        descripcion: 'Es un estudiante con amplia experiencia académica en computación e informática, cursando La carrera de Informática y Tecnología Multimedia como su tercera carrera universitaria. Se ha capacitado también en otras áreas de conocimiento afines a la producción de medios audiovisuales, como la locución y el doblaje. En estas últimas áreas, se ha posicionado como finalista de una cadena radial internacional y ha logrado el reconocimiento de artistas internacionales en el medio.',
         descripcion2: 'Más información sobre Carlos:',
         facebook: 'https://www.facebook.com/profile.php?id=100012303106400',
         instagram: 'https://www.instagram.com/bogamedia/',
