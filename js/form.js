@@ -304,7 +304,7 @@ $(document).ready(function () {
     
                                         });
                                         //opcion de formateo
-                                        form.reset();
+                                        location.replace("formulario.html");
                                     }
                                 });
     
