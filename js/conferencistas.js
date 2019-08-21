@@ -2,11 +2,11 @@ const conferencistas = [{
         name: 'Andres Chinchilla',
         imagen: 'img/conferencista/andresChinchilla.jpg',
         right: '0', //Esto define que tan a la izquierda se va a desplazar la imagen de la persona en el circulo
-        title: 'Dev',
-        descripcion: 'Make sure everyone is safe on the internet',
-        descripcion2: 'Encrypt all the data from a computer in exchange for money',
+        title: 'Desarrollador',
+        descripcion: '',
+        descripcion2: '',
         facebook: 'https://www.facebook.com/andres.chinchillafernandez',
-        instagram: '',
+        instagram: 'https://www.instagram.com/andres_chfe/',
         twitter: ''
     },
     {
@@ -22,10 +22,10 @@ const conferencistas = [{
     },
     {
         name: 'Nick González',
-        imagen: 'img/conferencista/nick.png',
+        imagen: 'img/conferencista/nick.jpg',
         right: '0', //Esto define que tan a la izquierda se va a desplazar la imagen de la persona en el circulo
         title: 'Desarrollador',
-        descripcion: 'Es desarrollador de software en la empresa "Mr Rabbit", realizó sus estudios en la Universidad de Costa Rica donde consiguío ser bachiller en informática empresarial y licenciatura en la Universidad Técnica Nacional.',
+        descripcion: 'Es desarrollador de software en la empresa "Mobile Marketing", realizó sus estudios en la Universidad de Costa Rica donde consiguío ser bachiller en informática empresarial y licenciatura en la Universidad Técnica Nacional.',
         descripcion2: 'Más información sobre Nick:',
         facebook: 'https://www.facebook.com/nick.gonse',
         instagram: 'https://www.instagram.com/nick.gonse/',
@@ -57,15 +57,15 @@ const conferencistas = [{
         name: 'Yohanna Alvarez',
         imagen: 'img/conferencista/yohannaAlvarez.jpg',
         right: '0', //Esto define que tan a la izquierda se va a desplazar la imagen de la persona en el circulo
-        title: 'Desarrolladora',
-        descripcion: '',
+        title: 'Desarrolladora, expositora, etc',
+        descripcion: 'Es madre, esposa, ingeniera en computación UCR, MBA en progreso; certificada ITIL, PMP. Hoy en IBM Gerente de Programas de Tecnología y Operaciones de Canales Digitales; inició su carrera como desarrolladora de software, ingeniera de aseguramiento de calidad de software y gerente de proyectos. Encargada de varios programas de desarrollo de Tecnología inclusiva y Empoderamiento de mujeres en Carreras STEAM. Recientemente galardonada con el premio a la Excelencia en el voluntariado de IBM; entregado solamente a 5 colaboradores individualesde en todo el mundo dado por la CEO de IBM: Virginia (Ginni) Rommetty. Yohanna es miembro de Society of Women in Engineering en Costa Rica. Mentora de mujeres jóvenes y empresarias en Tecnología. Conferencista y motivadora. Su mayor proyecto es su familia, su hija.',
         descripcion2: 'Más información sobre Yohanna:',
         facebook: 'https://www.facebook.com/yohanna.mac/',
         instagram: 'https://www.instagram.com/yohanna_mac/',
         twitter: ''
     },
     {
-        name: 'Carlos Bogarín',
+        name: 'Carlos Bogarin',
         imagen: 'img/conferencista/carlosBogarin.jpg',
         right: '0', //Esto define que tan a la izquierda se va a desplazar la imagen de la persona en el circulo
         title: 'Estudiante',
@@ -80,9 +80,64 @@ const conferencistas = [{
         imagen: 'img/conferencista/marcos.jpg',
         right: '0', //Esto define que tan a la izquierda se va a desplazar la imagen de la persona en el circulo
         title: 'Estudiante',
-        descripcion: '',
+        descripcion: 'Estudió informática y tecnología multimedia en la Universidad de Costa Rica y actualmente cursa el último semestre de la Licenciatura de Experiencia en la misma carrera y universidad.',
         descripcion2: 'Más información sobre Marcos:',
         facebook: 'https://www.facebook.com/markox.molina',
+        instagram: '',
+        twitter: ''
+    },
+    {
+        name: 'Kevin Villata',
+        imagen: 'img/conferencista/KevinVillata.jpg',
+        right: '0', //Esto define que tan a la izquierda se va a desplazar la imagen de la persona en el circulo
+        title: 'Promotor',
+        descripcion: 'Promotor de exportaciones para PROCOMER en el área de la Industria Naranja',
+        descripcion2: 'Más información sobre Kevin:',
+        facebook: 'https://www.facebook.com/Kvillalta18',
+        instagram: '',
+        twitter: ''
+    },
+    {
+        name: 'Felipe Cartin',
+        imagen: 'img/conferencista/felipe.jpg',
+        right: '0', //Esto define que tan a la izquierda se va a desplazar la imagen de la persona en el circulo
+        title: 'Director de Arte para Tree Interactive',
+        descripcion: 'Diseñador de videojuegos, director de arte y CEO en Tree Interactive',
+        descripcion2: 'Más información sobre Felipe:',
+        facebook: 'https://www.facebook.com/zerocartin',
+        instagram: 'https://www.instagram.com/zerocartin/',
+        twitter: 'https://twitter.com/ZeroCartin'
+    },
+    {
+        name: 'Joseph Chavez',
+        imagen: 'img/conferencista/default.png',
+        right: '0', //Esto define que tan a la izquierda se va a desplazar la imagen de la persona en el circulo
+        title: 'Auditor',
+        descripcion: 'Auditor de seguridad de aplicaciones en Softtek',
+        descripcion2: '',
+        facebook: '',
+        instagram: '',
+        twitter: ''
+    },
+    {
+        name: 'Didier Ramirez',
+        imagen: 'img/conferencista/didier.jpg',
+        right: '0', //Esto define que tan a la izquierda se va a desplazar la imagen de la persona en el circulo
+        title: 'CEO y Profesor',
+        descripcion: 'CEO en BIMSMART & DRRDstudio, 3D Generalist & BIM Specialist. Profesor en la Universidad Autónoma de México',
+        descripcion2: 'Mas Información de Didier: https://www.drrdstudio.net/',
+        facebook: '',
+        instagram: '',
+        twitter: ''
+    },
+    {
+        name: 'Cesar Wang',
+        imagen: 'img/conferencista/default.png',
+        right: '0', //Esto define que tan a la izquierda se va a desplazar la imagen de la persona en el circulo
+        title: 'Embajador',
+        descripcion: 'Agregado de educación de la Embajada de la República Popular China',
+        descripcion2: 'Mas Información de Cesar',
+        facebook: 'https://www.facebook.com/profile.php?id=100013768006459',
         instagram: '',
         twitter: ''
     },
