@@ -6,7 +6,8 @@ const talleresMartes15pm = "<option value='' default>Elige el taller</option><op
 const talleresMiercoles8am = "<option value='' default>Elige el taller</option><option value='Taller:IntroducciónaUnityAndrésChinchilla-AulaN01'>Taller: Introducción a Unity Andrés Chinchilla - Aula N01</option><option value='RealidadAumentadaITM,Licenciaturaenvideojuegos-AulaN02'>Realidad Aumentada ITM, Licenciatura en videojuegos - Aula N02</option><option value='IngenieríaSocialyhackingBrandonCisneros-AulaN03'>Ingeniería Social y hacking Brandon Cisneros - Aula N03</option>";
 const talleresMiercoles9am = "<option value='' default>Elige el taller</option><option value='Elfuturodecómohacerlascosas:Mediosyentretenimiento:VideojuegosDidierRamírezDarjo-AulaN04'>El futuro de cómo hacer las cosas:  Medios y entretenimiento: Videojuegos Didier Ramírez Darjo - Aula N04</option>";
 const talleresMiercoles10am = "<option value='' default>Elige el taller</option><option value='ElequipodeITdelfuturoJoséPabloEsquivelEscalante-AulaN02'>El equipo de IT del futuro José Pablo Esquivel Escalante - Aula N02</option><option value='ElMétodoBarguetJulioJonathanSalazar-AulaN03'>El Método Barguet  Julio Jonathan Salazar - Aula N03</option><option value='Taller:ReactBásicoNikolGonzálezSequeira-AulaN05'>Taller: React Básico Nikol González Sequeira - Aula N05</option><option value='TallerdefotografíacondispositivosmóvilesJhonPérezLópez-AulaN09'>Taller de fotografía con dispositivos móviles Jhon Pérez López - Aula N09</option>";
-const talleresMiercoles13pm = "<option value='' default>Elige el taller</option><option value='OportunidadesdeestudioenChinaCésarWang-AulaN05'>Oportunidades de estudio en China César Wang - Aula N05</option>";
+const talleresMiercoles13pm = "<option value='' default>Elige el taller</option><option value='OportunidadesdeestudioenChinaCésarWang-AulaN05'>Oportunidades de estudio en China César Wang - Aula N05</option><option value='RetodeprogramacionAulaN02'>Reto de programación Aula N02</option><option value='RetodefotografiaAulaN03'>Reto de fotografía Aula N03</option><option value='RetodedibujodigitalAulaN04'>Reto de dibujo digital Aula N04</option><option value='RetodediseñodevideojuegosAulaN01'>Reto de diseño de videojuegos Aula N01</option>";
+
 const talleres = [{
     id: '#1',
     value: 'TallerintroductoriodeUnrealAndrésChinchilla-AulaN01',
@@ -145,7 +146,32 @@ const talleres = [{
     name: 'Oportunidades de estudio en China César Wang - Aula N05',
     
 },
+{
+    id: '#24',
+    value: 'RetodeprogramacionAulaN02',
+    name: 'Reto de programación Aula N02',
+    
+},
+{
+    id: '#25',
+    value: 'RetodefotografiaAulaN03',
+    name: 'Reto de fotografía Aula N03',
+    
+},
+{
+    id: '#26',
+    value: 'RetodedibujodigitalAulaN04',
+    name: 'Reto de dibujo digital Aula N04',
+    
+},
+{
+    id: '#27',
+    value: 'RetodediseñodevideojuegosAulaN01',
+    name: 'Reto de diseño de videojuegos Aula N01',
+    
+},
 ];
+
 var limite = 0;
 
 var firebaseConfig = {
@@ -221,9 +247,11 @@ $(document).ready(function () {
     
             } else {
                 event.preventDefault();
-                var nombreCompleto = $('#nombreCompleto2').val();
+                var nombreCompleto = $('#nombreCompleto2').val().trim();
                 var carne = $('#carne2').val();
                 var taller = $("#taller2").val();
+                var carnetEspacio= carne.toUpperCase().replace(/\s+/g, '');
+                
                 db.ref("inscripciones/" + taller + "/limite").once("value", snapshot => {
                     limite = snapshot.val();
                     if (limite <= 0) {
@@ -235,7 +263,7 @@ $(document).ready(function () {
                             } else {
                                 db.ref("inscripciones/" + taller).push({
                                     nombreCompleto: nombreCompleto,
-                                    carneCedula: carne,
+                                    carneCedula: carnetEspacio,
                                     taller: taller,
                                 }, function (error) {
                                     if (error) {
@@ -275,8 +303,9 @@ $(document).ready(function () {
             } else {
                 event.preventDefault();
                 var nombreCompleto = $('#nombreCompleto').val();
-                var carne = $('#carne').val();
-                var taller = $("#taller").val();
+                var carne = $('#carne').val().trim();
+                var taller = $("#taller").val().trim();
+                var carnetEspacio= carne.toUpperCase().replace(/\s+/g, '');
                 db.ref("inscripciones/" + taller + "/limite").once("value", snapshot => {
                     limite = snapshot.val();
                     if (limite <= 0) {
@@ -288,7 +317,7 @@ $(document).ready(function () {
                             } else {
                                 db.ref("inscripciones/" + taller).push({
                                     nombreCompleto: nombreCompleto,
-                                    carneCedula: carne,
+                                    carneCedula: carnetEspacio,
                                     taller: taller,
                                 }, function (error) {
                                     if (error) {
