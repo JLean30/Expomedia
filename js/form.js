@@ -87,7 +87,12 @@ $(document).ready(function () {
                                     update = limite - 1;
                                     db.ref("inscripciones/" + taller).update({
                                         limite: update
+                                        
                                     });
+                                    $("#form-taller").attr("hidden", true);
+                                    $("#hora").attr("hidden", true);
+                                    $("#hora2").attr("hidden", true);
+                                    form.reset();
 
 
                                 }
