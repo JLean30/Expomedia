@@ -162,6 +162,7 @@ var firebaseConfig = {
 let app = firebase.initializeApp(firebaseConfig);
 let db = app.database();
 const form = document.getElementById('form-inscripcion'); // Obtenemos la referencia al formulario
+const form2 = document.getElementById('form-inscripcion2'); // Obtenemos la referencia al formulario
 $(document).ready(function () {
     if (window.location.hash.includes('#')) {
         $('#form').attr("hidden",true);
@@ -203,14 +204,7 @@ $(document).ready(function () {
                 $("#form-taller").attr("hidden", true);
             }
         });
-        //habilitar button
-        $('#taller').change(function () {
-            if (($('#taller').val().trim() != '')) {
-                $("#enviar-inscripcion").attr("disabled", false);
-            } else {
-                $("#enviar-inscripcion").attr("disabled", true);
-            }
-        });
+        
     
         //talleres segun hora
         $("#hora").change(function () {
@@ -222,14 +216,14 @@ $(document).ready(function () {
     
         $("#enviar-inscripcion").click(function () {
     
-            if ($('#taller').val().trim() === '' || $('#carne').val().trim() === "" || $('#nombreCompleto').val().trim() === "") {
+            if ($('#taller2').val().trim() === '' || $('#carne2').val().trim() === "" || $('#nombreCompleto2').val().trim() === "") {
     
     
             } else {
                 event.preventDefault();
-                var nombreCompleto = $('#nombreCompleto').val();
-                var carne = $('#carne').val();
-                var taller = $("#taller").val();
+                var nombreCompleto = $('#nombreCompleto2').val();
+                var carne = $('#carne2').val();
+                var taller = $("#taller2").val();
                 db.ref("inscripciones/" + taller + "/limite").once("value", snapshot => {
                     limite = snapshot.val();
                     if (limite <= 0) {
@@ -246,10 +240,10 @@ $(document).ready(function () {
                                 }, function (error) {
                                     if (error) {
                                         // The write failed...
-                                        console.log("shit");
+                                        console.log("madre mia");
                                     } else {
                                         // Data saved successfully!
-                                        console.log("Wiiii");
+                                        console.log("bien!");
                                         alert("inscripcion enviada");
                                         update = limite - 1;
                                         db.ref("inscripciones/" + taller).update({
@@ -259,9 +253,8 @@ $(document).ready(function () {
                                         $("#form-taller").attr("hidden", true);
                                         $("#hora").attr("hidden", true);
                                         $("#hora2").attr("hidden", true);
-                                        $("#form-taller").attr("hidden", true);
-                                        form.reset();
-                                        $("#enviar-inscripcion").attr("disabled", true);
+                                        form2.reset();
+                                        
     
                                     }
                                 });
@@ -311,7 +304,7 @@ $(document).ready(function () {
     
                                         });
                                         //opcion de formateo
-    
+                                        form.reset();
                                     }
                                 });
     
@@ -329,7 +322,7 @@ $(document).ready(function () {
             switch ($('#hora').val().trim()) {
                 case "9am":
                     $("#form-taller").attr("hidden", false);
-                    $('#taller')
+                    $('#taller2')
                         .find('option')
                         .remove()
                         .end()
@@ -337,7 +330,7 @@ $(document).ready(function () {
                     break;
                 case '10am':
                     $("#form-taller").attr("hidden", false);
-                    $('#taller')
+                    $('#taller2')
                         .find('option')
                         .remove()
                         .end()
@@ -345,7 +338,7 @@ $(document).ready(function () {
                     break;
                 case '13pm':
                     $("#form-taller").attr("hidden", false);
-                    $('#taller')
+                    $('#taller2')
                         .find('option')
                         .remove()
                         .end()
@@ -353,7 +346,7 @@ $(document).ready(function () {
                     break;
                 case '15pm':
                     $("#form-taller").attr("hidden", false);
-                    $('#taller')
+                    $('#taller2')
                         .find('option')
                         .remove()
                         .end()
@@ -371,7 +364,7 @@ $(document).ready(function () {
             switch ($('#hora2').val().trim()) {
                 case "8am":
                     $("#form-taller").attr("hidden", false);
-                    $('#taller')
+                    $('#taller2')
                         .find('option')
                         .remove()
                         .end()
@@ -379,7 +372,7 @@ $(document).ready(function () {
                     break;
                 case '9am':
                     $("#form-taller").attr("hidden", false);
-                    $('#taller')
+                    $('#taller2')
                         .find('option')
                         .remove()
                         .end()
@@ -387,7 +380,7 @@ $(document).ready(function () {
                     break;
                 case '10am':
                     $("#form-taller").attr("hidden", false);
-                    $('#taller')
+                    $('#taller2')
                         .find('option')
                         .remove()
                         .end()
@@ -395,7 +388,7 @@ $(document).ready(function () {
                     break;
                 case '13pm':
                     $("#form-taller").attr("hidden", false);
-                    $('#taller')
+                    $('#taller2')
                         .find('option')
                         .remove()
                         .end()
