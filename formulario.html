@@ -17,10 +17,13 @@
         <div class="background--particles" id="particles-js"></div>
         <nav class="navbar navbar-expand-lg navbar-dark">
             <img src="img/expomedia-logo.png" alt="" class="navbar-brand logo pt-4 ml-3 ml-lg-5">
-            <button class="navbar-toggler btn mb-5 navbar--btn__zindex" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler btn mb-5 navbar--btn__zindex" type="button" data-toggle="collapse"
+                data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse justify-content-end pb-lg-5 pr-3 navbar-overlay" id="navbarNavDropdown">
+            <div class="collapse navbar-collapse justify-content-end pb-lg-5 pr-3 navbar-overlay"
+                id="navbarNavDropdown">
                 <ul class="navbar-nav">
                     <li class="nav-item">
                         <a class="nav-link" href="index.html">Inicio</a>
@@ -47,13 +50,17 @@
             </div>
         </nav>
         <div class="col-10 offset-1 d-none d-lg-block">
-            <p class="hero--paragraph text-white mt-5">La carrera de Informática y Tecnología Multimedia les <br> da la bienvenida a la Expomedia 2018. Te invitamos a <br>que asistas en las charlas y talleres impartidos por expertos <br>invitados en su área de trabajo y estudiantes de la universidad<br>como
-                fotografía, diseño de páginas web, software libre, big data,<br> creación de videojuegos, modelado en 3D entre otros</p>
+            <p class="hero--paragraph text-white mt-5">La carrera de Informática y Tecnología Multimedia les <br> da la
+                bienvenida a la Expomedia 2018. Te invitamos a <br>que asistas en las charlas y talleres impartidos por
+                expertos <br>invitados en su área de trabajo y estudiantes de la universidad<br>como
+                fotografía, diseño de páginas web, software libre, big data,<br> creación de videojuegos, modelado en 3D
+                entre otros</p>
             <a class="hero--button btn btn-light mt-3 px-4 position-absolute" href="patrocinadores.html">Patrocinios</a>
             <p class="hero--date text-white d-inline-block mt-4 mb-0">Acompañanos</p>
         </div>
         <div class="d-flex col-10 offset-1 flex-column">
-            <p class="hero--date mb-0 text-white d-inline-block text-center mt-5 mt-lg-0 text-lg-right">27 - 28<br> Agosto</p>
+            <p class="hero--date mb-0 text-white d-inline-block text-center mt-5 mt-lg-0 text-lg-right">27 - 28<br>
+                Agosto</p>
             <p class="hero--paragraph text-white text-center text-lg-right">UCR, Sede Nances Esparza</p>
         </div>
     </header>
@@ -63,7 +70,8 @@
                 <img src="img/cutout.svg" alt="" class="section--cutout__img left d-inline-block">
                 <img src="img/cutout.svg" alt="" class="section--cutout__img right d-inline-block">
             </div>
-            <div class="position-absolute d-flex justify-content-around w-100 centralnav--container flex-column flex-lg-row">
+            <div
+                class="position-absolute d-flex justify-content-around w-100 centralnav--container flex-column flex-lg-row">
                 <div class="d-none d-lg-flex centralnav--container__left">
                     <div class="centralnav--element">
                         <a href="galeria.html#gallery">
@@ -128,35 +136,47 @@
     <section id="form">
         <div class="row bg-light pt-5">
             <div class="col-8 mx-auto mb-5">
-                <form id="form-inscripcion">
+                <form  id="form-inscripcion" >
                     <div class="form-group">
-                        <label for="exampleInputEmail1">Nombre Completo</label>
-                        <input type="text" class="form-control" id="nombreCompleto" aria-describedby="emailHelp"
+                        <label >Nombre Completo</label>
+                        <input type="text" required class="form-control" id="nombreCompleto" aria-describedby="emailHelp"
                             placeholder="Escribe tu nombre completo">
                     </div>
                     <div class="form-group">
-                        <label for="exampleInputPassword1">carné</label>
-                        <input type="text" class="form-control" id="carne" placeholder="Escribe tu número de carné">
+                        <label >Carné o Cédula</label>
+                        <input type="text" required class="form-control" id="carne" placeholder="Escribe tu número de carné">
                     </div>
-                    <div class="form-group">
-                        <label for="exampleFormControlSelect1">Taller</label>
-                        <select class="form-control" id="taller">
-                            <option value="" default>Elige el taller</option>
-                            <option disabled> Talleres del Martes 27 de Agosto</option>
-                            <option value="Taller introductorio de Unreal 
-                            Andrés Chinchilla - Aula N01">Taller introductorio de Unreal 
-                            Andrés Chinchilla - Aula N01- Hora 9:00am</option>
-                            <option value="Esencial Costa Rica, Economía Naranja
-                            Kevin Villalta - Aula N03">Esencial Costa Rica, Economía Naranja
-                            Kevin Villalta - Aula N03 - Hora 9:00 am</option>
-                            <option>4</option>
-                            <option>5</option>
-                            <option disabled> Talleres del Miercoles 28 de Agosto</option>
+                    <div class="form-inline mb-3" id="form-fecha">
+                        <label class="mr-3" >Día de inscripción</label>
+                        <select  class='form-control mr-3 mb-3 mt-3' id="dia">
+                            <option value="">Elige el día</option>
+                            <option value="martes">martes 27 de Agosto</option>
+                            <option value="miercoles">miercoles 28 de Agosto</option>
                         </select>
+                        <label class="mr-3">Hora de inscripción</label>
+                        <select  class='form-control mr-3' hidden id="hora">
+                            <option value=''>Elige la hora</option>
+                            <option value='9am'>9:00 am</option>
+                            <option value='10am'>10:00am</option>
+                            <option value='13pm'>13:00 pm</option>
+                            <option value='15pm'>15:00pm</option>
+                        </select>
+                        <select class='form-control' hidden id="hora2">
+                                <option value=''>Elige la hora</option>
+                                <option value='8am'>8:00 am</option>
+                                <option value='9am'>9:00am</option>
+                                <option value='10am'>10:00 pm</option>
+                                <option value='13pm'>13:00pm</option>
+                            </select>
+                    </div>
+
+                    <div class="form-group" hidden id="form-taller">
+                        <label >Taller</label>
+                        <select required="true" class='form-control' id='taller'></select>
                         <small>¡Recuerda no incribirte en dos talleres en la misma hora!</small>
                     </div>
 
-                    <button id="enviar-inscripcion" class="btn btn-primary col-4 ">Inscribirse</button>
+                    <button id="enviar-inscripcion"  class="btn btn-primary" >Inscribirse</button>
                 </form>
             </div>
         </div>
@@ -167,13 +187,16 @@
                 <p>© 2019 - Expomedia</p>
             </div>
             <div class="col facebookColor d-flex align-items-center justify-content-center">
-                <a class="text-center p-1" href="https://www.facebook.com/ExpoMediaITM/" target="_blank"><img class="p-2" src="img/facebook.png" alt=""></a>
+                <a class="text-center p-1" href="https://www.facebook.com/ExpoMediaITM/" target="_blank"><img
+                        class="p-2" src="img/facebook.png" alt=""></a>
             </div>
             <div class="col instagramColor d-flex align-items-center justify-content-center">
-                <a class="text-center p-1" href="https://www.instagram.com/itm_ucr/" target="_blank"><img class="p-2" src="img/instagram.png" alt=""></a>
+                <a class="text-center p-1" href="https://www.instagram.com/itm_ucr/" target="_blank"><img class="p-2"
+                        src="img/instagram.png" alt=""></a>
             </div>
             <div class="col twitterColor d-flex align-items-center justify-content-center">
-                <a class="text-center p-1" href="https://twitter.com/search?q=%23expomediaitm&src=typd" target="_blank"><img class="p-2" src="img/twitter.png" alt=""></a>
+                <a class="text-center p-1" href="https://twitter.com/search?q=%23expomediaitm&src=typd"
+                    target="_blank"><img class="p-2" src="img/twitter.png" alt=""></a>
             </div>
         </div>
     </footer>
@@ -181,18 +204,18 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
     </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    <script  src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
     </script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
     </script>
-    <script src="js/particles.js"></script>
-    <script  src="js/app.js"></script>
-    <script defer src="https://www.gstatic.com/firebasejs/6.3.5/firebase-app.js"></script>
-    <script defer src="https://www.gstatic.com/firebasejs/6.2.3/firebase-auth.js"></script>
-    <script defer src="https://www.gstatic.com/firebasejs/6.2.3/firebase-database.js"></script>
-    <script defer src="./js/form.js"></script>
+    <script  defer src="js/particles.js"></script>
+    <script defer src="js/app.js"></script>
+    <script  src="https://www.gstatic.com/firebasejs/6.3.5/firebase-app.js"></script>
+    <script  src="https://www.gstatic.com/firebasejs/6.2.3/firebase-auth.js"></script>
+    <script  src="https://www.gstatic.com/firebasejs/6.2.3/firebase-database.js"></script>
+    <script  src="./js/form.js"></script>
 </body>
 
 </html>
