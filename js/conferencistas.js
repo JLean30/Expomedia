@@ -3,8 +3,8 @@ const conferencistas = [{
         imagen: 'img/conferencista/andresChinchilla.jpg',
         right: '0', //Esto define que tan a la izquierda se va a desplazar la imagen de la persona en el circulo
         title: 'Desarrollador',
-        descripcion: '',
-        descripcion2: '',
+        descripcion: 'Es un estudiante avanzado de la carrera ITM, con amplia experiencia en el desarrollo y diseño de videojuegos, trabaja actualmente en Headless Chicken Games, ha sido ganador y mentor en varios game jams, y fue elejido recientemente por ASODEV para representar a Costa Rica en el GDC del 2019',
+        descripcion2: 'Más información sobre Andrés:',
         facebook: 'https://www.facebook.com/andres.chinchillafernandez',
         instagram: 'https://www.instagram.com/andres_chfe/',
         twitter: ''
