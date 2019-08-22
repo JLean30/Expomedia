@@ -1,8 +1,8 @@
 const hora = "<label>Hora de inscripción</label><select class='form-control ml-3' id='hora'><option value=''>Elige la hora</option><option value='9am'>9:00 am</option><option value='10am'>10:00am</option><option value='13pm'>13:00 pm</option><option value='15pm'>15:00pm</option></select>";
 const talleresMartes9am = "<option value='' default>Elige el taller</option><option value='TallerintroductoriodeUnrealAndrésChinchilla-AulaN01'>Taller introductorio de Unreal Andrés Chinchilla - Aula N01</option><option value='EsencialCostaRica,EconomíaNaranjaKevinVillalta-AulaN03'>Esencial Costa Rica, Economía NaranjaKevin Villalta - Aula N03 </option><option value='AsísomoslosticosyasípodemossermejoresGeovannyDebrusJiménez-AulaN09'>Así somos los ticos y así podemos ser mejores  Geovanny 'Debrus' Jiménez - Aula N09</option>";
-const talleresMartes10am = "<option value='' default>Elige el taller</option><option value='TreeInteractive,experienciasenlaindustriadelvideojuegoFelipeCartín,AndrésCartín-AulaN02'>Tree Interactive, experiencias en la industria del videojuego Felipe Cartín, Andrés Cartín - Aula N02</option><option value='ElejercicioprofesionaldelartistaplásticoRicardoVega-N04'>El ejercicio profesional del artista plástico Ricardo Vega - N04</option><option value='Taller:ContenedoresdeDockerManuelEmilioDelgadoLópez-AulaN05'>Taller: Contenedores de Docker Manuel Emilio Delgado López - Aula N05</option>";
+const talleresMartes10am = "<option value='' default>Elige el taller</option><option value='TreeInteractive,experienciasenlaindustriadelvideojuegoFelipeCartín,AndrésCartín-AulaN02'>Tree Interactive, experiencias en la industria del videojuego Felipe Cartín, Andrés Cartín - Aula N02</option><option value='ElejercicioprofesionaldelartistaplásticoRicardoVega-N04'>El ejercicio profesional del artista plástico Ricardo Vega - N04</option><option value='Taller:ContenedoresdeDockerManuelEmilioDelgadoLópez-AulaN05'>Taller: Contenedores de Docker Manuel Emilio Delgado López - Aula N05</option> <option value='Torneo:HookbotsporTreeInteractive'>Torneo: Hookbots por Tree Interactive</option>";
 const talleresMartes13pm = "<option value='' default>Elige el taller</option><option value='Taller:DiseñodeaplicacionesAndrésChinchilla-AulaN01'>Taller: Diseño de aplicaciones Andrés Chinchilla - Aula N01</option><option value='CibersecurityTrendsJosephChávezVelasco-AulaN02'>Cibersecurity Trends Joseph Chávez Velasco - Aula N02</option><option value='DesarrollodepelículasanimadasenCRLeoRojas-AulaN03'>Desarrollo de películas animadas en CR Leo Rojas - Aula N03</option> <option value='MuestrayTaller:CanalesyherramientasdemercadeodigitalYohannaÁlvarezCordero-AulaN04'>Muestra y Taller: Canales y herramientas de mercadeo digital Yohanna Álvarez Cordero - Aula N04</option><option value='TallerdelocuciónyactuaciónvocalCarlosBogarín-EstudiodeGrabación'>Taller de locución y actuación vocal Carlos Bogarín - Estudio de Grabación</option>";
-const talleresMartes15pm = "<option value='' default>Elige el taller</option><option value='Elfuturodelaproducción,mediosyentretenimiento:PelículasDidierRamírezDarjo-AulaN01'>El futuro de la producción, medios y entretenimiento: PelículasDidier Ramírez Darjo - Aula N01</option><option value='DiseñodearteparavideojuegosSebastiánBrenesAndresChAulaN03'>Diseño de arte para videojuegos Sebastián Brenes, Andres Ch. - Aula N03</option><option value='Taller:ExperienciadeUsuarioMarcosMolina-AulaN04'>Taller: Experiencia de Usuario Marcos Molina -Aula N04</option>";
+const talleresMartes15pm = "<option value='' default>Elige el taller</option><option value='Elfuturodelaproducción,mediosyentretenimiento:PelículasDidierRamírezDarjo-AulaN01'>El futuro de la producción, medios y entretenimiento: PelículasDidier Ramírez Darjo - Aula N01</option><option value='Taller:Diseño,prototipadoeimpresión3DenIMAulaN02'>Taller: Diseño, prototipado e impresión 3D en IM Luis Diego Hidalgo Calvo - Aula N02</option><option value='DiseñodearteparavideojuegosSebastiánBrenesAndresChAulaN03'>Diseño de arte para videojuegos Sebastián Brenes, Andres Ch. - Aula N03</option><option value='Taller:ExperienciadeUsuarioMarcosMolina-AulaN04'>Taller: Experiencia de Usuario Marcos Molina -Aula N04</option>";
 const talleresMiercoles8am = "<option value='' default>Elige el taller</option><option value='Taller:IntroducciónaUnityAndrésChinchilla-AulaN01'>Taller: Introducción a Unity Andrés Chinchilla - Aula N01</option><option value='RealidadAumentadaITM,Licenciaturaenvideojuegos-AulaN02'>Realidad Aumentada ITM, Licenciatura en videojuegos - Aula N02</option><option value='IngenieríaSocialyhackingBrandonCisneros-AulaN03'>Ingeniería Social y hacking Brandon Cisneros - Aula N03</option>";
 const talleresMiercoles9am = "<option value='' default>Elige el taller</option><option value='Elfuturodecómohacerlascosas:Mediosyentretenimiento:VideojuegosDidierRamírezDarjo-AulaN04'>El futuro de cómo hacer las cosas:  Medios y entretenimiento: Videojuegos Didier Ramírez Darjo - Aula N04</option>";
 const talleresMiercoles10am = "<option value='' default>Elige el taller</option><option value='ElequipodeITdelfuturoJoséPabloEsquivelEscalante-AulaN02'>El equipo de IT del futuro José Pablo Esquivel Escalante - Aula N02</option><option value='ElMétodoBarguetJulioJonathanSalazar-AulaN03'>El Método Barguet  Julio Jonathan Salazar - Aula N03</option><option value='Taller:ReactBásicoNikolGonzálezSequeira-AulaN05'>Taller: React Básico Nikol González Sequeira - Aula N05</option><option value='TallerdefotografíacondispositivosmóvilesJhonPérezLópez-AulaN09'>Taller de fotografía con dispositivos móviles Jhon Pérez López - Aula N09</option>";
@@ -46,140 +46,140 @@ const talleres = [{
 },
 {
     id: '#7',
+    value: 'TorneoHookbotsporTreeInteractive',
+    name: 'Torneo de Hookbots por Tree Interactive',
+    
+},
+{
+    id: '#8',
     value: 'Taller:DiseñodeaplicacionesAndrésChinchilla-AulaN01',
     name: 'Taller: Diseño de aplicaciones Andrés Chinchilla -Aula N01',
     
 },
 {
-    id: '#8',
+    id: '#9',
     value: 'CibersecurityTrendsJosephChávezVelasco-AulaN02',
     name: 'Cibersecurity Trends Joseph Chávez Velasco - Aula N02',
     
 },
 {
-    id: '#9',
+    id: '#10',
     value: 'DesarrollodepelículasanimadasenCRLeoRojas-AulaN03',
     name: 'Desarrollo de películas animadas en CR Leo Rojas -Aula N03',
     
 },
 {
-    id: '#10',
+    id: '#11',
     value: 'MuestrayTaller:CanalesyherramientasdemercadeodigitalYohannaÁlvarezCordero-AulaN04',
     name: 'Muestra y Taller: Canales y herramientas de mercadeo digital Yohanna Álvarez Cordero - Aula N04',
     
 },
 {
-    id: '#11',
+    id: '#12',
     value: 'TallerdelocuciónyactuaciónvocalCarlosBogarín-EstudiodeGrabación',
     name: 'Taller de locución y actuación vocal Carlos Bogarín - Estudio de Grabación',
     
 },
 {
-    id: '#12',
+    id: '#13',
     value: 'Elfuturodelaproducción,mediosyentretenimiento:PelículasDidierRamírezDarjo-AulaN01',
     name: 'El futuro de la producción, medios y entretenimiento: PelículasDidier Ramírez Darjo - Aula N01',
     
 },
 {
-    id: '#13',
+    id: '#14',
     value: 'Diseño,prototipadoeimpresión3DenIMAulaN02',
     name: 'Diseño, prototipado e impresión 3D en IM Luis Diego Hidalgo Calvo - Aula N02',
     
 },
 {
-    id: '#14',
+    id: '#15',
     value: 'DiseñodearteparavideojuegosSebastiánBrenesAndresChAulaN03',
     name: 'Diseño de arte para videojuegos Sebastián Brenes, Andres Ch. - Aula N03',
     
 },
 {
-    id: '#15',
+    id: '#16',
     value: 'Taller:ExperienciadeUsuarioMarcosMolina-AulaN04',
     name: 'aller: Experiencia de Usuario Marcos Molina -Aula N04',
     
 },
 {
-    id: '#16',
+    id: '#17',
     value: 'Taller:IntroducciónaUnityAndrésChinchilla-AulaN01',
     name: 'Taller: Introducción a Unity Andrés Chinchilla - Aula N01',
     
 },
 {
-    id: '#17',
+    id: '#18',
     value: 'RealidadAumentadaITM,Licenciaturaenvideojuegos-AulaN02',
     name: 'Realidad Aumentada ITM, Licenciatura en videojuegos - Aula N02',
     
 },
 {
-    id: '#18',
+    id: '#19',
     value: 'IngenieríaSocialyhackingBrandonCisneros-AulaN03',
     name: 'Ingeniería Social y hacking Brandon Cisneros - Aula N03',
     
 },
 {
-    id: '#19',
+    id: '#20',
     value: 'Elfuturodecómohacerlascosas:Mediosyentretenimiento:VideojuegosDidierRamírezDarjo-AulaN04',
     name: 'El futuro de cómo hacer las cosas: Medios y entretenimiento: Videojuegos Didier Ramírez Darjo - Aula N04',
     
 },
 {
-    id: '#20',
+    id: '#21',
     value: 'ElequipodeITdelfuturoJoséPabloEsquivelEscalante-AulaN02',
     name: 'El equipo de IT del futuro José Pablo Esquivel Escalante - Aula N02',
     
 },
 {
-    id: '#21',
+    id: '#22',
     value: 'ElMétodoBarguetJulioJonathanSalazar-AulaN03',
     name: 'El Método Barguet Julio Jonathan Salazar - Aula N03',
     
 },
 {
-    id: '#22',
+    id: '#23',
     value: 'Taller:ReactBásicoNikolGonzálezSequeira-AulaN05',
     name: 'Taller: React Básico Nikol González Sequeira - Aula N05',
     
 },
 {
-    id: '#23',
+    id: '#24',
     value: 'TallerdefotografíacondispositivosmóvilesJhonPérezLópez-AulaN09',
     name: 'Taller de fotografía con dispositivos móviles Jhon Pérez López - Aula N09',
     
 },
 {
-    id: '#24',
+    id: '#25',
     value: 'OportunidadesdeestudioenChinaCésarWang-AulaN05',
     name: 'Oportunidades de estudio en China César Wang - Aula N05',
     
 },
 {
-    id: '#25',
+    id: '#26',
     value: 'RetodeprogramacionAulaN02',
     name: 'Reto de programación Aula N02',
     
 },
 {
-    id: '#26',
+    id: '#27',
     value: 'RetodefotografiaAulaN03',
     name: 'Reto de fotografía Aula N03',
     
 },
 {
-    id: '#27',
+    id: '#28',
     value: 'RetodedibujodigitalAulaN04',
     name: 'Reto de dibujo digital Aula N04',
     
 },
 {
-    id: '#28',
+    id: '#29',
     value: 'RetodediseñodevideojuegosAulaN01',
     name: 'Reto de diseño de videojuegos Aula N01',
-    
-},
-{
-    id: '#29',
-    value: 'TorneoHookbots',
-    name: 'Torneo de Hookbots por Tree Interactive',
     
 },
 ];
