@@ -82,90 +82,96 @@ const talleres = [{
 },
 {
     id: '#13',
+    value: 'Diseño,prototipadoeimpresión3DenIMAulaN02',
+    name: 'Diseño, prototipado e impresión 3D en IM Luis Diego Hidalgo Calvo - Aula N02',
+    
+},
+{
+    id: '#14',
     value: 'DiseñodearteparavideojuegosSebastiánBrenesAndresChAulaN03',
     name: 'Diseño de arte para videojuegos Sebastián Brenes, Andres Ch. - Aula N03',
     
 },
 {
-    id: '#14',
+    id: '#15',
     value: 'Taller:ExperienciadeUsuarioMarcosMolina-AulaN04',
     name: 'aller: Experiencia de Usuario Marcos Molina -Aula N04',
     
 },
 {
-    id: '#15',
+    id: '#16',
     value: 'Taller:IntroducciónaUnityAndrésChinchilla-AulaN01',
     name: 'Taller: Introducción a Unity Andrés Chinchilla - Aula N01',
     
 },
 {
-    id: '#16',
+    id: '#17',
     value: 'RealidadAumentadaITM,Licenciaturaenvideojuegos-AulaN02',
     name: 'Realidad Aumentada ITM, Licenciatura en videojuegos - Aula N02',
     
 },
 {
-    id: '#17',
+    id: '#18',
     value: 'IngenieríaSocialyhackingBrandonCisneros-AulaN03',
     name: 'Ingeniería Social y hacking Brandon Cisneros - Aula N03',
     
 },
 {
-    id: '#18',
+    id: '#19',
     value: 'Elfuturodecómohacerlascosas:Mediosyentretenimiento:VideojuegosDidierRamírezDarjo-AulaN04',
     name: 'El futuro de cómo hacer las cosas: Medios y entretenimiento: Videojuegos Didier Ramírez Darjo - Aula N04',
     
 },
 {
-    id: '#19',
+    id: '#20',
     value: 'ElequipodeITdelfuturoJoséPabloEsquivelEscalante-AulaN02',
     name: 'El equipo de IT del futuro José Pablo Esquivel Escalante - Aula N02',
     
 },
 {
-    id: '#20',
+    id: '#21',
     value: 'ElMétodoBarguetJulioJonathanSalazar-AulaN03',
     name: 'El Método Barguet Julio Jonathan Salazar - Aula N03',
     
 },
 {
-    id: '#21',
+    id: '#22',
     value: 'Taller:ReactBásicoNikolGonzálezSequeira-AulaN05',
     name: 'Taller: React Básico Nikol González Sequeira - Aula N05',
     
 },
 {
-    id: '#22',
+    id: '#23',
     value: 'TallerdefotografíacondispositivosmóvilesJhonPérezLópez-AulaN09',
     name: 'Taller de fotografía con dispositivos móviles Jhon Pérez López - Aula N09',
     
 },
 {
-    id: '#23',
+    id: '#24',
     value: 'OportunidadesdeestudioenChinaCésarWang-AulaN05',
     name: 'Oportunidades de estudio en China César Wang - Aula N05',
     
 },
 {
-    id: '#24',
+    id: '#25',
     value: 'RetodeprogramacionAulaN02',
     name: 'Reto de programación Aula N02',
     
 },
 {
-    id: '#25',
+    id: '#26',
     value: 'RetodefotografiaAulaN03',
     name: 'Reto de fotografía Aula N03',
     
 },
 {
-    id: '#26',
+    id: '#27',
     value: 'RetodedibujodigitalAulaN04',
     name: 'Reto de dibujo digital Aula N04',
     
 },
 {
-    id: '#27',
+    id: '#28',
     value: 'RetodediseñodevideojuegosAulaN01',
     name: 'Reto de diseño de videojuegos Aula N01',
     
