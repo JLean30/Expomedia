@@ -46,7 +46,7 @@ const talleres = [{
 },
 {
     id: '#7',
-    value: 'TorneoHookbotsporTreeInteractive',
+    value: 'Torneo:HookbotsporTreeInteractive',
     name: 'Torneo de Hookbots por Tree Interactive',
     
 },
