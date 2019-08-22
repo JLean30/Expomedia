@@ -176,6 +176,12 @@ const talleres = [{
     name: 'Reto de diseño de videojuegos Aula N01',
     
 },
+{
+    id: '#29',
+    value: 'TorneoHookbots',
+    name: 'Torneo de Hookbots por Tree Interactive',
+    
+},
 ];
 
 var limite = 0;
