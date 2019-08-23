@@ -1,4 +1,15 @@
 const conferencistas = [{
+        name: 'Debrus Jimenez',
+        imagen: 'img/conferencista/debrusJimenez.jpg',
+        right: '0', //Esto define que tan a la izquierda se va a desplazar la imagen de la persona en el circulo
+        title: 'Escritor',
+        descripcion: 'Fundador y escritor en CulturaCr como parte de la plataforma de Debrús Producciones.',
+        descripcion2: 'Más información sobre Geovanny:',
+        facebook: 'https://www.facebook.com/debrusjimenez',
+        instagram: 'https://www.instagram.com/culturacr/',
+        twitter: 'https://twitter.com/debrusjimenez'
+    },
+    {
         name: 'Andres Chinchilla',
         imagen: 'img/conferencista/andresChinchilla.jpg',
         right: '0', //Esto define que tan a la izquierda se va a desplazar la imagen de la persona en el circulo
