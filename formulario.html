@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Evento anual de la carrera de Informática y Tecnología Multimedia de la Universida de Costa Rica">
+    <meta name="author" content="Hiram González Castro, Priscilla Rivera Blanco, Jean Carlos Brenes Zuñiga, Randall Quesada Angulo">
     <title>Expomedia | Inscripciones</title>
     <script src="fontawesome/js/all.min.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -32,7 +34,7 @@
                         <a class="nav-link" href="torneos.html">Torneos</a>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link" href="#form">Inscripciones</a>
+                        <a class="nav-link" href="formulario.html">Inscripciones</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="galeria.html#gallery">Galería</a>
@@ -48,7 +50,7 @@
         </nav>
         <div class="col-10 offset-1 d-none d-lg-block">
             <p class="hero--paragraph text-white mt-5">La carrera de Informática y Tecnología Multimedia les <br> da la
-                bienvenida a la Expomedia 2018. Te invitamos a <br>que asistas en las charlas y talleres impartidos por
+                bienvenida a la Expomedia 2019. Te invitamos a <br>que asistas en las charlas y talleres impartidos por
                 expertos <br>invitados en su área de trabajo y estudiantes de la universidad<br>como
                 fotografía, diseño de páginas web, software libre, big data,<br> creación de videojuegos, modelado en 3D
                 entre otros</p>
@@ -93,7 +95,7 @@
                 </div>
                 <div class="d-none d-lg-flex centralnav--container__right">
                     <div class="centralnav--element">
-                        <a href="#form">
+                        <a href="formulario.html">
                             <i class="far fa-list-alt centralnav--icon"></i>
                             <p class="hero--paragraph text-white">Inscripciones</p>
                         </a>
@@ -122,7 +124,7 @@
                         </a>
                     </div>
                     <div class="centralnav--element">
-                        <a href="">
+                        <a href="torneos.html">
                             <i class="fas fa-trophy centralnav--icon"></i>
                         </a>
                     </div>
@@ -130,19 +132,43 @@
             </div>
         </div>
     </section>
-    <section id="form" hidden>
+    <section id="form2" class="form--zindex">
+            <div class="row bg-light pt-5">
+                <div class="col-10 col-lg-8 mx-auto mb-5">
+                    <form id="form-inscripcion">
+                        <div class="form-group">
+                            <label >Nombre Completo</label>
+                            <input type="text" required class="form-control" id="nombreCompleto" aria-describedby="emailHelp"
+                                placeholder="Escribe tu nombre completo">
+                       
+                        </div>
+                        <div class="form-group">
+                            <label >Carné o Cédula</label>
+                            <input type="text" required class="form-control" id="carne" placeholder="Escribe tu número de carné">
+                           
+                        </div>
+                        <div class="form-group"  id="form-tallerCronograma">
+                            <label >Taller</label>
+                            <select required="true" class='form-control' id='taller'></select>
+                            <small>¡Recuerda no incribirte en dos talleres en la misma hora!</small>
+                        </div>
+    
+                        <button id="enviar-inscripcion2"   class="btn btn-primary" >Inscribirse</button>
+                    </form>
+            </section>
+    <section id="form" class="form--zindex">
         <div class="row bg-light pt-5">
             <div class="col-10 col-lg-8 mx-auto mb-5">
-                <form id="form-inscripcion">
+                <form id="form-inscripcion2">
                     <div class="form-group">
                         <label >Nombre Completo</label>
-                        <input type="text" required class="form-control" id="nombreCompleto" aria-describedby="emailHelp"
+                        <input type="text" required class="form-control" id="nombreCompleto2" aria-describedby="emailHelp"
                             placeholder="Escribe tu nombre completo">
                    
                     </div>
                     <div class="form-group">
                         <label >Carné o Cédula</label>
-                        <input type="text" required class="form-control" id="carne" placeholder="Escribe tu número de carné">
+                        <input type="text" required class="form-control" id="carne2" placeholder="Escribe tu número de carné">
                        
                     </div>
                     <div class="form-inline mb-3" id="form-fecha">
@@ -156,26 +182,27 @@
                         <select  class='form-control mr-3' hidden id="hora">
                             <option value=''>Elige la hora</option>
                             <option value='9am'>9:00 am</option>
-                            <option value='10am'>10:00am</option>
+                            <option value='10am'>10:00 am</option>
+                            <option value="11am">11:00 am</option>
                             <option value='13pm'>13:00 pm</option>
-                            <option value='15pm'>15:00pm</option>
+                            <option value='15pm'>15:00 pm</option>
                         </select>
                         <select class='form-control' hidden id="hora2">
                                 <option value=''>Elige la hora</option>
                                 <option value='8am'>8:00 am</option>
-                                <option value='9am'>9:00am</option>
-                                <option value='10am'>10:00 pm</option>
-                                <option value='13pm'>13:00pm</option>
+                                <option value='9am'>9:00 am</option>
+                                <option value='10am'>10:00 am</option>
+                                <option value='13pm'>13:00 pm</option>
                             </select>
                     </div>
 
                     <div class="form-group" hidden id="form-taller">
                         <label >Taller</label>
-                        <select required="true" class='form-control' id='taller'></select>
+                        <select required="true" class='form-control' id='taller2'></select>
                         <small>¡Recuerda no incribirte en dos talleres en la misma hora!</small>
                     </div>
 
-                    <button id="enviar-inscripcion" disabled  class="btn btn-primary" >Inscribirse</button>
+                    <button id="enviar-inscripcion"   class="btn btn-primary" >Inscribirse</button>
                 </form>
             </div>
         </div>
@@ -183,19 +210,14 @@
     <footer>
         <div class="row">
             <div class="col-lg-6 col-sm-12 footerColor text-center text-white p-4">
-                <p>© 2019 - Expomedia</p>
+                    <img class="logo"src="img/logo-itm.png" alt="Informática y Tecnología Multimedia">
+                <p> © 2019 - Expomedia | Informática y Tecnología Multimedia</p>
             </div>
             <div class="col facebookColor d-flex align-items-center justify-content-center">
-                <a class="text-center p-1" href="https://www.facebook.com/ExpoMediaITM/" target="_blank"><img
-                        class="p-2" src="img/facebook.png" alt=""></a>
+                <a class="text-center p-1" href="https://www.facebook.com/ExpoMediaITM/" target="_blank"><img class="p-2" src="img/facebook.png" alt=""></a>
             </div>
             <div class="col instagramColor d-flex align-items-center justify-content-center">
-                <a class="text-center p-1" href="https://www.instagram.com/itm_ucr/" target="_blank"><img class="p-2"
-                        src="img/instagram.png" alt=""></a>
-            </div>
-            <div class="col twitterColor d-flex align-items-center justify-content-center">
-                <a class="text-center p-1" href="https://twitter.com/search?q=%23expomediaitm&src=typd"
-                    target="_blank"><img class="p-2" src="img/twitter.png" alt=""></a>
+                <a class="text-center p-1" href="https://www.instagram.com/itm_ucr/" target="_blank"><img class="p-2" src="img/instagram.png" alt=""></a>
             </div>
         </div>
     </footer>
