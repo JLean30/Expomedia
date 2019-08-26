@@ -212,9 +212,9 @@ $(document).ready(function () {
     for (var i = 0; i < len; i++) {
         db.ref("inscripciones/" + talleres[i].value).once("value", snapshot => {
         value= snapshot.val();
-        taller = snapshot.key;
+        
         if(value != null){
-            $('#cupos').append("<li class='list-group-item d-flex justify-content-between align-items-center'>"+taller+"<span class='badge badge-primary badge-pill'>Cupos: "+value.limite+"</span></li>");
+            $('#cupos').append("<li class='list-group-item d-flex justify-content-between align-items-center'>"+value.nombreTaller+"<span class='badge badge-primary badge-pill'>Cupos: "+value.limite+"</span></li>");
             
         }
             
