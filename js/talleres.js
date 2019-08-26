@@ -214,7 +214,7 @@ $(document).ready(function () {
         value= snapshot.val();
         
         if(value != null){
-            $('#cupos').append("<li class='list-group-item d-flex justify-content-between align-items-center'>"+value.nombreTaller+"<span class='badge badge-primary badge-pill'>Cupos: "+value.limite+"</span></li>");
+            $('#cupos').append("<li class='list-group-item d-flex justify-content-between align-items-center'>"+value.nombreTaller+"<span class='badge badge-primary badge-pill px-2 py-2'>Cupos: "+value.limite+"</span></li>");
             
         }
             
