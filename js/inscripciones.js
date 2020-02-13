@@ -91,7 +91,7 @@ const talleres = [{
 {
     id: '#16',
     value: 'Taller:ExperienciadeUsuarioMarcosMolina-AulaN04',
-    name: 'aller: Experiencia de Usuario Marcos Molina -Aula N04',
+    name: 'Taller: Experiencia de Usuario Marcos Molina -Aula N04',
 
 },
 {
@@ -186,9 +186,56 @@ var firebaseConfig = {
 // Initialize Firebase
 let app = firebase.initializeApp(firebaseConfig);
 let db = app.database();
+var len = talleres.length;
+
+
+
 $(document).ready(function () {
     
-      
+   
+    
+        for (var i = 0; i < len; i++) {
+            var id= "inscripciones"+i;
+                        var ud = id;
+                        console.log(ud);
+                        const inscritos = document.getElementById(ud);
+                       
+            db.ref("inscripciones/" + talleres[i].value).once("value", snapshot => {
+            value= snapshot.val();
+         
+                snapshot.forEach(snap => {
+                    var inscrito= snap.val();
+                    if(inscrito.nombreCompleto !=null){
+                        var node = document.createElement("p");   
+                        node.append(inscrito.nombreCompleto)
+                        inscritos.appendChild(node);
+                    }
+                   
+                   
+                  
+                //
+                return false;
+              });
+               
+               
+               return false;
+            
+                
+    
+            });
+            
+                
+     
+                
+       
+            
+
+        
+                
+            
+        }
+    
+
       var saveData = (function () {
         var a = document.createElement("a");
         document.body.appendChild(a);
@@ -208,23 +255,8 @@ $(document).ready(function () {
     
     var data = [];
     
-    var len = talleres.length;
-    for (var i = 0; i < len; i++) {
-        db.ref("inscripciones/" + talleres[i].value).once("value", snapshot => {
-        value= snapshot.val();
-        taller = snapshot.key;
-        if(value != null){
-            $('#cupos').append("<li class='list-group-item d-flex justify-content-between align-items-center'>"+taller+"<span class='badge badge-primary badge-pill'>Cupos: "+value.limite+"</span></li>");
-            
-        }
-            
-
-        });
-      
-            
-            
-        
-    }
+    
+    
 
 
 
